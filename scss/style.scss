@@ -71,9 +71,12 @@ main > .tagline {
   height: 2.65rem;
 }
 
+/*Added line height to emoji icon*/
 #em {
   height: 1.1em;
 }
+
+/*Removed underline from icons*/
 a {
   text-decoration: none;
 }
