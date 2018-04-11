@@ -1,4 +1,7 @@
-function showIt() {
-  document.getElementById("desc1").style.visibility = "visible";
+function fadeIn(id) {
+  $("#" + id).addClass("animated fadeInRight");
 }
-setTimeout("showIt()", 1000);
+
+setTimeout(function() {
+  fadeIn("desc1");
+}, 10);
