@@ -120,7 +120,9 @@ a {
 
 .scroll-container a {
   position: absolute;
-  bottom: 20px;
+  top: 0;
+  width: 80px;
+  height: 80px;
   left: 50%;
   z-index: 2;
   display: inline-block;
@@ -131,15 +133,12 @@ a {
   text-decoration: none;
   transition: opacity 0.3s;
 }
-.scroll-container a:hover {
-  opacity: 0.5;
+#scroll :hover {
   cursor: pointer;
+  opacity: 0.5;
 }
 
 /* Button animation */
-#scroll span:hover {
-  cursor: pointer;
-}
 #scroll span {
   position: absolute;
   top: 0;
