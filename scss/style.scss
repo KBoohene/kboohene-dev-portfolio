@@ -36,7 +36,11 @@ html {
 
 /* Custom Styles */
 
-main {
+main,
+.cool-dev,
+.code-fan,
+.react-buff,
+.smiley {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -90,4 +94,84 @@ a {
 #desc4,
 #hello {
   animation-duration: $short-anim;
+}
+
+/*General Styling for page sections*/
+.cool-dev,
+.code-fan,
+.react-buff {
+  border-bottom: 1px solid;
+}
+
+/*Scroll down button
+* Source: https://gist.github.com/CodeMyUI/64383984c2b17f2eba2e71ee28a9cd7c
+*/
+
+/*Container holding button*/
+.scroll-container {
+  margin-top: 100px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.scroll-container a {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+.scroll-container a:hover {
+  opacity: 0.5;
+}
+
+/* Button animation */
+#scroll span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb 1.5s infinite;
+  animation: sdb 1.5s infinite;
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes sdb {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+@keyframes sdb {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
 }
