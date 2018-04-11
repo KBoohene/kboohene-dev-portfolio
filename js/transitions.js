@@ -1,3 +1,17 @@
+//Animation for page scrolling
+$("#scroll").click(function(e) {
+  console.log("output");
+  e.preventDefault();
+  var position = $(".cool-dev").offset().top;
+  $("body, html").animate(
+    {
+      scrollTop: position
+    },
+    1200
+  );
+});
+
+//Fades text into page
 function fadeIn(id) {
   $("#" + id).addClass("animated fadeInRight");
 }
