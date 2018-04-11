@@ -108,11 +108,14 @@ a {
 */
 
 /*Container holding button*/
+.scroll-container:hover {
+  cursor: pointer;
+}
 .scroll-container {
   margin-top: 100px;
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 150%;
 }
 
 .scroll-container a {
@@ -130,9 +133,13 @@ a {
 }
 .scroll-container a:hover {
   opacity: 0.5;
+  cursor: pointer;
 }
 
 /* Button animation */
+#scroll span:hover {
+  cursor: pointer;
+}
 #scroll span {
   position: absolute;
   top: 0;
