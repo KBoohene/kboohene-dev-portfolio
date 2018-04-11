@@ -48,18 +48,6 @@ $("#tag3").click(function(e) {
   );
 });
 
-//smiley
-$("#tag4").click(function(e) {
-  e.preventDefault();
-  var position = $(".smiley").offset().top;
-  $("body, html").animate(
-    {
-      scrollTop: position
-    },
-    2000
-  );
-});
-
 //Added pulse animation on hover to social icons
 $("[id^=social]").hover(
   function() {
@@ -80,5 +68,4 @@ setTimeout(function() {
   fadeIn("tag1");
   fadeIn("tag2");
   fadeIn("tag3");
-  fadeIn("tag4");
 }, 10);
