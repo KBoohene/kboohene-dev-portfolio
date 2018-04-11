@@ -13,7 +13,7 @@ $("#scroll").click(function(e) {
 /*Scoll animation for different taglines*/
 
 //cool-dev
-$("#desc1").click(function(e) {
+$("#tag1").click(function(e) {
   e.preventDefault();
   var position = $(".cool-dev").offset().top;
   $("body, html").animate(
@@ -25,7 +25,7 @@ $("#desc1").click(function(e) {
 });
 
 //code-fanatic
-$("#desc2").click(function(e) {
+$("#tag2").click(function(e) {
   e.preventDefault();
   var position = $(".code-fan").offset().top;
   $("body, html").animate(
@@ -37,7 +37,7 @@ $("#desc2").click(function(e) {
 });
 
 //react-buff
-$("#desc3").click(function(e) {
+$("#tag3").click(function(e) {
   e.preventDefault();
   var position = $(".react-buff").offset().top;
   $("body, html").animate(
@@ -49,7 +49,7 @@ $("#desc3").click(function(e) {
 });
 
 //smiley
-$("#desc4").click(function(e) {
+$("#tag4").click(function(e) {
   e.preventDefault();
   var position = $(".smiley").offset().top;
   $("body, html").animate(
@@ -77,8 +77,8 @@ function fadeIn(id) {
 
 //Timer on when to load the animation
 setTimeout(function() {
-  fadeIn("desc1");
-  fadeIn("desc2");
-  fadeIn("desc3");
-  fadeIn("desc4");
+  fadeIn("tag1");
+  fadeIn("tag2");
+  fadeIn("tag3");
+  fadeIn("tag4");
 }, 10);
