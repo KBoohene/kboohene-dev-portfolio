@@ -88,10 +88,10 @@ a {
 }
 
 /*Animation styles*/
-#desc1,
-#desc2,
-#desc3,
-#desc4,
+#tag1,
+#tag2,
+#tag3,
+#tag4,
 #hello {
   animation-duration: $short-anim;
 }
@@ -103,6 +103,12 @@ a {
   border-bottom: 1px solid;
 }
 
+#tag1:hover,
+#tag2:hover,
+#tag3:hover,
+#tag4:hover {
+  cursor: pointer;
+}
 /*Scroll down button
 * Source: https://gist.github.com/CodeMyUI/64383984c2b17f2eba2e71ee28a9cd7c
 */
