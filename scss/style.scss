@@ -1,3 +1,5 @@
+$short-anim: 1.7s;
+
 /* Typography */
 
 html {
@@ -86,5 +88,5 @@ a {
 #desc2,
 #desc3,
 #desc4 {
-  animation-duration: 2s;
+  animation-duration: $short-anim;
 }
