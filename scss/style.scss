@@ -77,11 +77,6 @@ main > .tagline {
   height: 2.65rem;
 }
 
-/*Added line height to emoji icon*/
-#em {
-  height: 1.1em;
-}
-
 /*Removed underline from icons*/
 a {
   text-decoration: none;
@@ -95,6 +90,15 @@ a {
   animation-duration: $short-anim;
 }
 
+#social-1,
+#social-2,
+#social-3,
+#social-4,
+#social-5,
+#social-6,
+#social-7 {
+  animation-duration: 0.4s;
+}
 /*General Styling for page sections*/
 .cool-dev,
 .code-fan,
@@ -207,4 +211,14 @@ a {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
+}
+
+[id^="soc"]:hover {
+  cursor: pointer;
+}
+
+[id^="soc"]:hover {
+  background-color: #30336b;
+  opacity: 0.5;
+  border-radius: 20%;
 }
