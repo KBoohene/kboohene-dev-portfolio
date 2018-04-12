@@ -48,6 +48,12 @@ $("#tag3").click(function(e) {
   );
 });
 
+//Scroll to top button
+$("#return-to-top").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, 1800);
+  return false;
+});
+
 //Added pulse animation on hover to social icons
 $("[id^=social]").hover(
   function() {

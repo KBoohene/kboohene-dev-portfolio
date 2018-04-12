@@ -278,7 +278,7 @@ footer {
   height: 13em;
   background-color: #222f3e;
   font-family: "Roboto", sans-serif;
-  padding-top: 2.3em;
+  padding-top: 1.3em;
 }
 
 .footer-header {
@@ -308,4 +308,11 @@ footer {
 #sitemap:hover {
   cursor: pointer;
   text-decoration: underline;
+}
+
+/*Return to top arrow*/
+#return-to-top {
+  background-color: rgb(255, 255, 255);
+  padding: 8px;
+  border-radius: 50%;
 }
