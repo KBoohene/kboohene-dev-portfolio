@@ -58,6 +58,16 @@ $("[id^=social]").hover(
   }
 );
 
+//Added flash animation on hover to skills icons
+$("[id^=skills]").hover(
+  function() {
+    $(this).addClass("animated infinite pulse");
+  },
+  function() {
+    $(this).removeClass("animated infinite pulse");
+  }
+);
+
 //Fades text into page
 function fadeIn(id) {
   $("#" + id).addClass("animated fadeInRight");

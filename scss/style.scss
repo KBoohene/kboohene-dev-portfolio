@@ -1,3 +1,7 @@
+$long-animation: 1.7s;
+$short-animation: 0.6s;
+$med-animation: 0;
+
 /* Typography */
 
 html {
@@ -87,7 +91,7 @@ a {
 #tag2,
 #tag3,
 #hello {
-  animation-duration: 1.7s;
+  animation-duration: $long-animation;
 }
 
 /*Pulse animation*/
@@ -98,8 +102,22 @@ a {
 #social-5,
 #social-6,
 #social-7 {
-  animation-duration: 0.6s;
+  animation-duration: $short-animation;
 }
+
+/*Pulse animation for skills icons*/
+#skills-1,
+#skills-2,
+#skills-3,
+#skills-4,
+#skills-5,
+#skills-6,
+#skills-7,
+#skills-8,
+#skills-9 {
+  animation-duration: $short-animation;
+}
+
 /*General Styling for page sections*/
 .cool-dev,
 .code-fan,
