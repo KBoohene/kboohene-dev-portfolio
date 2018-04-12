@@ -290,12 +290,22 @@ footer {
   border-left: 1px solid rgb(255, 255, 255);
   height: 9em;
 }
-
+.footer-mid-content {
+  margin-top: 2.1em;
+}
 .footer-social {
   opacity: 0.2;
   text-align: center;
+  @extend .footer-mid-content;
 }
 .copyright {
   text-align: center;
   font-size: 0.75em;
+}
+#footer-icons {
+  margin-left: 5px;
+}
+#sitemap:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
