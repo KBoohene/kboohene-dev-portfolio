@@ -273,7 +273,29 @@ a {
 
 /*Footer styling*/
 footer {
+  color: #8395a7;
   width: 100%;
   height: 13em;
-  background-color: #40407a;
+  background-color: #222f3e;
+  font-family: "Roboto", sans-serif;
+  padding-top: 2.3em;
+}
+
+.footer-header {
+  text-align: center;
+  font-weight: 100;
+}
+
+.footer-sections {
+  border-left: 1px solid rgb(255, 255, 255);
+  height: 9em;
+}
+
+.footer-social {
+  opacity: 0.2;
+  text-align: center;
+}
+.copyright {
+  text-align: center;
+  font-size: 0.75em;
 }
