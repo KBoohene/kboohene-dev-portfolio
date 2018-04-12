@@ -183,6 +183,7 @@ a {
   }
 }
 
+/*Underline animation for tag lines*/
 [id^="tag"] {
   position: relative;
   color: rgb(255, 255, 255);
@@ -214,6 +215,7 @@ a {
   transform: scaleX(1);
 }
 
+/*Hover shadow for social icons*/
 [id^="soc"]:hover {
   cursor: pointer;
 }
@@ -222,4 +224,17 @@ a {
   background-color: #30336b;
   opacity: 0.5;
   border-radius: 20%;
+}
+
+/*Avatar styling*/
+#avatar {
+  width: 65%;
+  border-radius: 50%;
+}
+
+/*Profile text*/
+#profile-text {
+  text-align: justify;
+  padding: 50px 2em 0em 0em;
+  font-family: "Reem Kufi", sans-serif;
 }
