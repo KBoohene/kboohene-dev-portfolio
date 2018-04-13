@@ -281,7 +281,6 @@ footer {
 
 .footer-social {
   padding-bottom: 1em;
-  @extend .footer-mid-content;
 }
 
 .copyright {
@@ -342,6 +341,13 @@ footer {
 #privacy:hover {
   cursor: pointer;
   color: #487eb0;
+}
+
+#trademark,
+#cookies,
+#privacy {
+  margin-right: 0.5em;
+  margin-left: 0.5em;
 }
 
 /*Return to top arrow*/
