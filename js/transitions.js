@@ -45,7 +45,7 @@ $("#tag3").click(function (e) {
 });
 
 //Scroll to top button
-$("#return-to-top").click(function () {
+$("#arrow-up").click(function () {
   $("html, body").animate({
     scrollTop: 0
   }, 1800);

@@ -120,8 +120,7 @@ a {
 
 /*General Styling for page sections*/
 .cool-dev,
-.code-fan,
-.react-buff {
+.code-fan {
   border-bottom: 1px solid;
 }
 
@@ -239,8 +238,8 @@ a {
 }
 
 [id^="soc"]:hover {
-  background-color: #30336b;
-  opacity: 0.5;
+  background-color: #8395a7;
+  opacity: 0.2;
   border-radius: 20%;
 }
 
@@ -275,9 +274,9 @@ a {
 footer {
   color: #8395a7;
   width: 100%;
-  height: 13em;
-  background-color: #222f3e;
-  font-family: "Roboto", sans-serif;
+  height: 14em;
+  background-color: #1f1f1f;
+  font-family: Montserrat, sans-serif;
   padding-top: 1.5em;
 }
 
@@ -299,11 +298,15 @@ footer {
   @extend .footer-mid-content;
 }
 .copyright {
-  text-align: center;
   font-size: 0.75em;
+  padding: 0.5em;
 }
 #footer-icons {
   margin-left: 5px;
+}
+
+#sitemap {
+  color: #8395a7;
 }
 #sitemap:hover {
   cursor: pointer;
@@ -311,12 +314,12 @@ footer {
 }
 
 /*Return to top arrow*/
-#return-to-top {
+#arrow-up {
   background-color: rgb(255, 255, 255);
   padding: 8px;
   border-radius: 50%;
 }
-#return-to-top:hover {
+#arrow-up:hover {
   color: black;
 }
 
