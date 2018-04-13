@@ -233,13 +233,10 @@ a {
 
 /*Hover shadow for social icons*/
 [id^="soc"]:hover {
-  cursor: pointer;
-}
-
-[id^="soc"]:hover {
   background-color: #7f8fa6;
   opacity: 0.3;
   border-radius: 20%;
+  cursor: pointer;
 }
 
 /*Avatar styling*/
@@ -301,18 +298,18 @@ footer {
   text-align: center;
 }
 
-#footer-icons {
+#footer-soc-links {
   font-size: 17px;
   font-weight: 500;
   text-decoration: none;
   color: #fff;
   margin-left: 5px;
+  &:hover {
+    color: #487eb0;
+  }
 }
 
-#footer-icons:hover {
-  color: #487eb0;
-}
-
+/*Hovering email transition*/
 #email {
   border-bottom: 5px solid #487eb0;
   &:hover {
@@ -325,10 +322,6 @@ footer {
 #email,
 #tel {
   font-weight: 700;
-}
-
-#email,
-#tel {
   font-size: 0.85em;
   color: #fff;
 }
@@ -350,9 +343,9 @@ footer {
   background-color: rgb(255, 255, 255);
   padding: 8px;
   border-radius: 50%;
-}
-#arrow-up:hover {
-  color: black;
+  &:hover {
+    color: black;
+  }
 }
 
 #arrow-up-container {
