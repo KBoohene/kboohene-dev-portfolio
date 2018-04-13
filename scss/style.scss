@@ -310,11 +310,16 @@ footer {
 }
 
 #footer-icons:hover {
-  color: #ffd600;
+  color: #487eb0;
 }
 
 #email {
-  border-bottom: 5px solid #ffd600;
+  border-bottom: 5px solid #487eb0;
+  &:hover {
+    padding-bottom: 10px;
+    transition: padding-bottom 0.16s ease-in;
+    border-bottom: 5px solid #fff;
+  }
 }
 
 #email,
@@ -333,10 +338,11 @@ footer {
   color: #fff;
 }
 
-#sitemap:hover {
+#sitemap:hover,
+#cookies:hover,
+#privacy:hover {
   cursor: pointer;
-  color: #ffd600;
-  text-decoration: underline;
+  color: #487eb0;
 }
 
 /*Return to top arrow*/
