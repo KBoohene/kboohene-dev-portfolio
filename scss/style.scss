@@ -312,10 +312,11 @@ footer {
 /*Hovering email transition*/
 #email {
   border-bottom: 5px solid #487eb0;
+  padding-bottom: 1.5px;
   &:hover {
     padding-bottom: 10px;
     transition: padding-bottom 0.16s ease-in;
-    border-bottom: 5px solid #fff;
+    border-bottom: 6px solid #fff;
   }
 }
 
