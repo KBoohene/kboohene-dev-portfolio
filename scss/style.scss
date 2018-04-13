@@ -278,7 +278,7 @@ footer {
   height: 13em;
   background-color: #222f3e;
   font-family: "Roboto", sans-serif;
-  padding-top: 1.3em;
+  padding-top: 1.5em;
 }
 
 .footer-header {
@@ -292,10 +292,10 @@ footer {
 }
 .footer-mid-content {
   margin-top: 2.1em;
+  text-align: center;
 }
 .footer-social {
   opacity: 0.2;
-  text-align: center;
   @extend .footer-mid-content;
 }
 .copyright {
@@ -315,4 +315,12 @@ footer {
   background-color: rgb(255, 255, 255);
   padding: 8px;
   border-radius: 50%;
+}
+#return-to-top:hover {
+  color: black;
+}
+
+#arrow-up-container {
+  padding-top: 1.5em;
+  text-align: center;
 }
