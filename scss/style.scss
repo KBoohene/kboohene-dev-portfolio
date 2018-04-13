@@ -41,8 +41,7 @@ html {
 main,
 .cool-dev,
 .code-fan,
-.react-buff,
-.smiley {
+.react-buff {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -274,25 +273,32 @@ a {
 footer {
   color: white;
   width: 100%;
-  height: 20em;
+  height: 18em;
+  display: flex;
+  flex-direction: column;
   background-color: #1f1f1f;
   font-family: "Montserrat", sans-serif;
-  padding-top: 3em;
+  padding: 0 30px;
+  justify-content: center;
 }
 
 .footer-mid-content {
   margin-top: 2.1em;
   text-align: center;
 }
+
 .footer-social {
   @extend .footer-mid-content;
 }
+
 .copyright {
   font-family: "Montserrat", sans-serif;
-  color: white;
-  font-size: 0.75em;
-  padding-bottom: 1em;
+  color: #a3a3a3;
+  font-size: 14px;
+  font-weight: 300;
+  padding-bottom: 1.5em;
   background-color: #1f1f1f;
+  text-align: center;
 }
 
 #footer-icons {
@@ -303,12 +309,33 @@ footer {
   margin-left: 5px;
 }
 
-#sitemap,
+#footer-icons:hover {
+  color: #ffd600;
+}
+
 #email {
+  border-bottom: 5px solid #ffd600;
+}
+
+#email,
+#tel {
+  font-weight: 700;
+}
+
+#email,
+#tel {
+  font-size: 0.85em;
   color: #fff;
 }
+
+#sitemap {
+  font-size: 0.7em;
+  color: #fff;
+}
+
 #sitemap:hover {
   cursor: pointer;
+  color: #ffd600;
   text-decoration: underline;
 }
 
