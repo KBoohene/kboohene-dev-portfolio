@@ -130,10 +130,7 @@ jQuery(document).ready(function($) {
   });
 });
 
-function disableToggle() {
-  $(".hamburger").removeClass("is-active");
-  $(".sidebar").removeClass("active");
-}
+/*Toggles the side menu*/
 function toggleSideBar() {
   if ($(".active")[0]) {
     $(".sidebar").removeClass("active");
