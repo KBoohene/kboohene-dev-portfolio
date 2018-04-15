@@ -33,7 +33,7 @@ jQuery(document).ready(function($) {
     }
   );
 
-  //Change section title based on dots hover
+  /*Change section title based on dots hover*/
   $("#dot1").hover(
     function() {
       document.getElementById("section-title").innerHTML = "Home";
@@ -91,6 +91,7 @@ jQuery(document).ready(function($) {
       if ($(this).scrollTop() > 400) {
         $(".nav-bar").fadeIn();
       } else {
+        disableToggle();
         $(".nav-bar").fadeOut();
       }
     });
@@ -110,6 +111,7 @@ jQuery(document).ready(function($) {
 
   /*Hamburger animation*/
   $(".hamburger").click(() => {
+    toggleSideBar();
     if ($(".is-active")[0]) {
       $(".hamburger").removeClass("is-active");
     } else {
@@ -117,3 +119,15 @@ jQuery(document).ready(function($) {
     }
   });
 });
+
+function disableToggle() {
+  $(".hamburger").removeClass("is-active");
+  $(".sidebar").removeClass("active");
+}
+function toggleSideBar() {
+  if ($(".active")[0]) {
+    $(".sidebar").removeClass("active");
+  } else {
+    $(".sidebar").addClass("active");
+  }
+}

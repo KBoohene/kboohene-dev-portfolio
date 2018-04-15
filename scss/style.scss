@@ -2,7 +2,6 @@
 $hamburger-layer-color: #fff;
 $hamburger-layer-height: 2px;
 $hamburger-layer-width: 35px;
-$hamburger-hover-transition-duration: 0.2s;
 
 $long-animation: 1.7s;
 $short-animation: 0.6s;
@@ -431,7 +430,7 @@ footer {
     width: 100%;
     background-color: #fff;
     box-shadow: 0 0 1px #fff;
-    transition: height 0.3s;
+    transition: height 0.6s;
   }
 
   li a:hover,
@@ -445,7 +444,7 @@ footer {
 }
 
 #hamburger-side-nav {
-  position: absolute;
+  position: fixed;
   top: 0.4em;
   right: 0.5em;
 }
@@ -462,4 +461,34 @@ footer {
   font-family: "Montserrat", sans-serif;
   color: #fff;
   width: 140px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 70px;
+  right: -100%;
+  width: 30%;
+  height: calc(100% - 55px);
+  background: #1f1f1f;
+  padding: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  transition: all 0.8s ease-in-out;
+  z-index: 1;
+}
+
+.sidebar .item {
+  font-size: 1em;
+  color: #fafafa;
+  padding: 20px 5px;
+  cursor: pointer;
+
+  &:hover {
+    color: #487eb0;
+    text-decoration: #487eb0 underline;
+  }
+}
+.sidebar.active {
+  opacity: 0.98;
+  right: 0px;
 }
