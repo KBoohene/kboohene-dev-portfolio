@@ -37,45 +37,55 @@ jQuery(document).ready(function($) {
   $("#dot1").hover(
     function() {
       document.getElementById("section-title").innerHTML = "Home";
+      $("#section-title").addClass("animated fadeIn");
     },
     function() {
       document.getElementById("section-title").innerHTML = "";
+      $("#section-title").removeClass("animated fadeIn");
     }
   );
 
   $("#dot2").hover(
     function() {
       document.getElementById("section-title").innerHTML = "Cool Dev";
+      $("#section-title").addClass("animated fadeIn");
     },
     function() {
       document.getElementById("section-title").innerHTML = "";
+      $("#section-title").removeClass("animated fadeIn");
     }
   );
 
   $("#dot3").hover(
     function() {
       document.getElementById("section-title").innerHTML = "Code Fanatic";
+      $("#section-title").addClass("animated fadeIn");
     },
     function() {
       document.getElementById("section-title").innerHTML = "";
+      $("#section-title").removeClass("animated fadeIn");
     }
   );
 
   $("#dot4").hover(
     function() {
       document.getElementById("section-title").innerHTML = "React Buff";
+      $("#section-title").addClass("animated fadeIn");
     },
     function() {
       document.getElementById("section-title").innerHTML = "";
+      $("#section-title").removeClass("animated fadeIn");
     }
   );
 
   $("#dot5").hover(
     function() {
-      document.getElementById("section-title").innerHTML = "Book Repo";
+      document.getElementById("section-title").innerHTML = "Books";
+      $("#section-title").addClass("animated fadeIn");
     },
     function() {
       document.getElementById("section-title").innerHTML = "";
+      $("#section-title").removeClass("animated fadeIn");
     }
   );
 
