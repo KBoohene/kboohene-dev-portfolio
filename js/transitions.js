@@ -101,7 +101,7 @@ jQuery(document).ready(function($) {
       if ($(this).scrollTop() > 400) {
         $(".nav-bar").fadeIn();
       } else {
-        disableToggle();
+        // disableToggle();
         $(".nav-bar").fadeOut();
       }
     });
