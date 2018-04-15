@@ -111,3 +111,12 @@ jQuery(document).ready(function($) {
     fadeIn("tag3");
   }, 10);
 });
+
+/*Hamburger animation*/
+$(".hamburger").click(function() {
+  if ($(".is-active")[0]) {
+    $(this).removeClass("is-active");
+  } else {
+    $(this).addClass("is-active");
+  }
+});
