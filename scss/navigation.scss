@@ -1,10 +1,11 @@
+@import "./common.scss";
 /*Positioning of nav bar*/
 .nav-bar {
   position: fixed;
   top: 0px;
   right: 0px;
   color: #000;
-  background-color: #487eb0;
+  background-color: $prim-color;
   opacity: 1;
   height: 3.5em;
   width: 100%;
@@ -39,7 +40,7 @@
     height: 100%;
     outline: none;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: $white;
     background-color: rgba(255, 255, 255, 0.3);
     text-indent: -999em;
     cursor: pointer; /* make the text accessible to screen readers */
@@ -63,8 +64,8 @@
     height: 0;
     left: 0;
     width: 100%;
-    background-color: #fff;
-    box-shadow: 0 0 1px #fff;
+    background-color: $white;
+    box-shadow: 0 0 1px $white;
     transition: height 0.6s;
   }
 
@@ -83,14 +84,14 @@
   position: fixed;
   top: 0.3em;
   font-size: 35px;
-  color: #fff;
+  color: $white;
 }
 
 //Title display on dot navigation
 #section-title {
   display: inline-block;
   font-family: "Montserrat", sans-serif;
-  color: #fff;
+  color: $white;
   width: 140px;
 }
 
@@ -108,7 +109,7 @@
   position: fixed;
   top: 0px;
   right: -100%;
-  background-color: #1f1f1f;
+  background-color: $second-color;
   z-index: 1;
   transition: all 0.8s ease-in-out;
 }
@@ -130,7 +131,7 @@
   right: -100%;
   width: 30%;
   height: calc(100% - 55px);
-  background: #1f1f1f;
+  background: $second-color;
   padding: 15px;
   font-family: "Montserrat", sans-serif;
   font-weight: 100;
@@ -145,8 +146,8 @@
   cursor: pointer;
 
   &:hover {
-    color: #487eb0;
-    text-decoration: #487eb0 underline;
+    color: $prim-color;
+    text-decoration: $prim-color underline;
   }
 }
 .sidebar.active {
