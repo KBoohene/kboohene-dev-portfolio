@@ -49,8 +49,20 @@ jQuery(document).ready(function($) {
     );
   });
 
+  //home
+  $("#dot1").click(function(e) {
+    e.preventDefault();
+    var position = $(".main").offset().top;
+    $("body, html").animate(
+      {
+        scrollTop: position
+      },
+      1800
+    );
+  });
+
   //Scroll to top button
-  $("#arrow-up").click(function() {
+  $("#arrow-up").click(() => {
     $("html, body").animate(
       {
         scrollTop: 0
@@ -64,20 +76,20 @@ jQuery(document).ready(function($) {
 
   //Added pulse animation on hover to social icons
   $("[id^=social]").hover(
-    function() {
+    () => {
       $(this).addClass("animated infinite pulse");
     },
-    function() {
+    () => {
       $(this).removeClass("animated infinite pulse");
     }
   );
 
   //Added flash animation on hover to skills icons
   $("[id^=skills]").hover(
-    function() {
+    () => {
       $(this).addClass("animated infinite pulse");
     },
-    function() {
+    () => {
       $(this).removeClass("animated infinite pulse");
     }
   );
@@ -88,8 +100,8 @@ jQuery(document).ready(function($) {
   $(".nav-bar").hide();
 
   // Fade animation
-  $(function() {
-    $(window).scroll(function() {
+  $(() => {
+    $(window).scroll(() => {
       // Determines position on page before navbar displays
       if ($(this).scrollTop() > 400) {
         $(".nav-bar").fadeIn();
@@ -105,7 +117,7 @@ jQuery(document).ready(function($) {
   }
 
   //Timer on when to load the animation
-  setTimeout(function() {
+  setTimeout(() => {
     fadeIn("tag1");
     fadeIn("tag2");
     fadeIn("tag3");
@@ -113,10 +125,44 @@ jQuery(document).ready(function($) {
 });
 
 /*Hamburger animation*/
-$(".hamburger").click(function() {
+$(".hamburger").click(() => {
   if ($(".is-active")[0]) {
     $(this).removeClass("is-active");
   } else {
     $(this).addClass("is-active");
   }
 });
+
+/*Change dot navigation based on sections*/
+$(window).scroll(() => {
+  //Section heights
+  let mT = $(".main").offset().top,
+    mH = $(".main").outerHeight();
+  let cdT = $(".cool-dev").offset().top;
+  let cfT = $(".code-fan").offset().top;
+  let rbT = $(".react-buff").offset().top;
+
+  //Window height
+  let wS = $(this).scrollTop(),
+    wH = $(window).height();
+
+  if (wS >= cdT && wS < cfT) {
+    isCurrent("#li-dot2");
+  } else if (wS >= cfT && wS < rbT) {
+    isCurrent("#li-dot3");
+  } else if (wS >= rbT) {
+    isCurrent("#li-dot4");
+  } else {
+    isCurrent("#li-dot1");
+  }
+});
+
+//Checks for the current dot
+function isCurrent(dotId) {
+  if ($(".current")[0]) {
+    let element = $(".dotstyle").find(".current");
+    element.removeClass("current");
+
+    $(dotId).addClass("current");
+  }
+}
