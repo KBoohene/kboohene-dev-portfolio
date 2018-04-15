@@ -21,8 +21,7 @@
   &:hover {
     @if $hamburger-hover-use-filter == true {
       filter: $hamburger-hover-filter;
-    }
-    @else {
+    } @else {
       opacity: $hamburger-hover-opacity;
     }
   }
