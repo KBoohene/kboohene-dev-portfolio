@@ -18,7 +18,7 @@ jQuery(document).ready(function($) {
     } else if (wS >= rbT) {
       isCurrent("#li-dot4");
     } else {
-      isCurrent("#li-dot1");
+      isCurrent("#li-dot1", "");
     }
   });
 
