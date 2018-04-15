@@ -137,7 +137,9 @@ function disableToggle() {
 function toggleSideBar() {
   if ($(".active")[0]) {
     $(".sidebar").removeClass("active");
+    $(".hamburger-menu").removeClass("loaded");
   } else {
     $(".sidebar").addClass("active");
+    $(".hamburger-menu").addClass("loaded");
   }
 }

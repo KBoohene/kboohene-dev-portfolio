@@ -365,5 +365,21 @@ footer {
   background-color: #1f1f1f;
   text-align: center;
 }
+
+.hamburger-menu {
+  height: 3.5em;
+  width: 30%;
+  position: fixed;
+  top: 0px;
+  right: -100%;
+  background-color: #1f1f1f;
+  z-index: 1;
+  transition: all 0.8s ease-in-out;
+}
+
+.hamburger-menu.loaded {
+  opacity: 0.98;
+  right: 0px;
+}
 //Importing navigation class
 @import "./navigation.scss";
