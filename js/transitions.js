@@ -36,7 +36,7 @@ jQuery(document).ready(function($) {
   /*Change section title based on dots hover*/
   $("#dot1").hover(
     function() {
-      document.getElementById("section-title").innerHTML = "Home";
+      document.getElementById("section-title").innerHTML = "Welcome";
       $("#section-title").addClass("animated fadeIn");
     },
     function() {
