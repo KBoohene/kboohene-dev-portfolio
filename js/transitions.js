@@ -15,20 +15,20 @@ jQuery(document).ready(function($) {
 
   //Added pulse animation on hover to social icons
   $("[id^=social]").hover(
-    () => {
+    function() {
       $(this).addClass("animated infinite pulse");
     },
-    () => {
+    function() {
       $(this).removeClass("animated infinite pulse");
     }
   );
 
   //Added flash animation on hover to skills icons
   $("[id^=skills]").hover(
-    () => {
+    function() {
       $(this).addClass("animated infinite pulse");
     },
-    () => {
+    function() {
       $(this).removeClass("animated infinite pulse");
     }
   );
