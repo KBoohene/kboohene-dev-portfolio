@@ -143,8 +143,7 @@ $(window).scroll(() => {
   let rbT = $(".react-buff").offset().top;
 
   //Window height
-  let wS = $(this).scrollTop(),
-    wH = $(window).height();
+  let wS = $(this).scrollTop() + 100;
 
   if (wS >= cdT && wS < cfT) {
     isCurrent("#li-dot2");
