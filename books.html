@@ -12,12 +12,60 @@
   <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="css/style.min.css" rel="stylesheet" type="text/css">
+  <link href="css/flexboxgrid.css" rel="stylesheet" type="text/css">
+
+  <script type="text/javascript" src="js/progressbar.js"></script>
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 </head>
 
 <body>
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+  <div class="row center-lg">
+    <div class="box">
+      <div id="page-loading"></div>
+    </div>
+  </div>
+
+  <script>
+    let page_bar = new ProgressBar.Circle("#page-loading", {
+      color: "#aaa",
+
+      strokeWidth: 3,
+      trailWidth: 1,
+      easing: "easeInOut",
+      duration: 1400,
+      from: {
+        color: "#aaa",
+        width: 1
+      },
+      to: {
+        color: "#333",
+        width: 3
+      },
+
+      step: function (state, circle) {
+        circle.path.setAttribute("stroke", state.color);
+        circle.path.setAttribute("stroke-width", state.width);
+
+        var value = Math.round(circle.value() * 100);
+        if (value === 0) {
+          circle.setText("");
+        } else {
+          circle.setText(value + "%  loading");
+        }
+      }
+    });
+
+    page_bar.animate(0.01);
+  </script>
+
+
+  <!-- <script type="text/javascript" src="js/transitions.js"></script>
+  <script type="text/javascript" src="js/scroll-transitions.js"></script> -->
 
 </body>
 
