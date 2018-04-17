@@ -2,8 +2,7 @@ jQuery(document).ready(function($) {
   /*Change dot navigation based on sections*/
   $(window).scroll(() => {
     //Section heights
-    let mT = $(".main").offset().top,
-      mH = $(".main").outerHeight();
+    let mT = $(".main").offset().top;
     let cdT = $(".cool-dev").offset().top;
     let cfT = $(".code-fan").offset().top;
     let rbT = $(".react-buff").offset().top;
@@ -18,7 +17,13 @@ jQuery(document).ready(function($) {
     } else if (wS >= rbT) {
       isCurrent("#li-dot4");
     } else {
-      isCurrent("#li-dot1", "");
+      isCurrent("#li-dot1");
+    }
+
+    wS = $(this).scrollTop() + 450;
+
+    if (wS >= cfT && wS < rbT) {
+      $(".skill-icons").addClass("animated fadeInUp");
     }
   });
 
