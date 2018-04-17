@@ -106,10 +106,10 @@ jQuery(document).ready(function($) {
       if (value === 0) {
         circle.setText("");
       } else {
-        circle.setText(value + "%  ready");
+        circle.setText(value + "%  loading");
       }
     }
   });
 
-  bar.animate(0);
+  bar.animate(0.01);
 });
