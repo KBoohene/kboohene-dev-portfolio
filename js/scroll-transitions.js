@@ -111,5 +111,5 @@ jQuery(document).ready(function($) {
     }
   });
 
-  bar.animate(0.1);
+  bar.animate(0);
 });
