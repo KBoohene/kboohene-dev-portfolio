@@ -120,12 +120,6 @@ a {
   animation-duration: $short-animation;
 }
 
-/*General Styling for page sections*/
-.cool-dev,
-.code-fan {
-  border-bottom: 1px solid;
-}
-
 #tag1:hover,
 #tag2:hover,
 #tag3:hover {
@@ -366,7 +360,25 @@ footer {
 //Importing navigation class
 @import "./navigation.scss";
 
-/*Skill Sections*/
-.skill-sections {
-  border: 1px $second-color solid;
+#sect-1,
+#sect-2,
+#sect-3 {
+  border-right: 1px white solid;
+}
+
+.code-fan {
+  background-color: $second-color;
+}
+
+.skill-icons {
+  padding: 2em;
+}
+
+#sect-1,
+#sect-2,
+#sect-3,
+#sect-4 {
+  font-family: "Montserrat", sans-serif;
+  height: 20em;
+  color: $white;
 }
