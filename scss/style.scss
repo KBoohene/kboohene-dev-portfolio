@@ -383,9 +383,6 @@ footer {
   font-family: "Montserrat", sans-serif;
   height: 20em;
   color: $white;
-  &:hover {
-    cursor: pointer;
-  }
 }
 
 .skill-icons {
@@ -393,32 +390,12 @@ footer {
   padding-top: 2.5em;
 }
 
-.skills-font {
-  font-size: 0.8em;
-}
-
-/*Progressbar styling*/
-#section-loading {
-  margin: 20px;
-  width: 350px;
-  height: 350px;
-}
-
-#page-loading {
-  width: 600px;
-  height: 600px;
-}
-
-.progressbar-text {
-  font-family: "Roboto", sans-serif;
-  font-size: 2rem;
-}
-
 /* Underline animation skill icons*/
 .skills-font {
   display: inline-block;
   position: relative;
   text-decoration: none;
+  font-size: 0.8em;
 
   &:before {
     display: block;
@@ -444,11 +421,63 @@ footer {
     bottom: 0;
   }
 
+  &:hover {
+    cursor: pointer;
+  }
+
   &:hover:before {
     width: 50%;
     left: 0;
   }
   &:hover:after {
     width: 50%;
+  }
+}
+
+/*Progressbar styling*/
+#section-loading {
+  margin: 20px;
+  width: 350px;
+  height: 350px;
+}
+
+#page-loading {
+  width: 600px;
+  height: 600px;
+}
+//Text in loader
+.progressbar-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+}
+
+/*Projects card*/
+
+.project-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  height: 20em;
+  border-radius: 2%;
+}
+
+.project-header {
+  height: 45%;
+}
+.project-text {
+  padding-top: 0.8em;
+  line-height: 1.5em;
+  word-spacing: 1px;
+  text-align: justify;
+  font-size: 0.8em;
+  margin: auto;
+  width: 13.5em;
+  height: 39%;
+}
+.project-footer {
+  i:hover {
+    color: $prim-color;
+    cursor: pointer;
   }
 }
