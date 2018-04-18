@@ -468,7 +468,7 @@ footer {
 .project-text {
   padding-top: 0.8em;
   line-height: 1.5em;
-  word-spacing: 1px;
+  word-spacing: 0.5px;
   text-align: justify;
   font-size: 0.8em;
   margin: auto;
@@ -476,6 +476,9 @@ footer {
   height: 39%;
 }
 .project-footer {
+  i {
+    color: black;
+  }
   i:hover {
     color: $prim-color;
     cursor: pointer;
