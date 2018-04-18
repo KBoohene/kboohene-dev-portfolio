@@ -144,6 +144,8 @@ jQuery(document).ready(function($) {
   $(".fd-md-close").click(function(e) {
     $("#modal-1").removeClass("md-show");
   });
+
+  //TODO: Complete the rest of the modal functions
 });
 
 /*Toggles the side menu*/

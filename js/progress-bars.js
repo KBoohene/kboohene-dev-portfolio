@@ -32,6 +32,7 @@ jQuery(document).ready(function($) {
     svgStyle: { width: "70%", height: "50%" }
   });
 
+  //TODO:Add the rest of the modal line animations
   css_line.animate(0.5);
   js_line.animate(0.7);
   html_line.animate(0.85);
