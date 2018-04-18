@@ -11,12 +11,9 @@ jQuery(document).ready(function($) {
     );
   });
 
-  //Preloading page animation
-  $(window).load(function() {
-    //$("#loading").delay(2000).fadeOut(500);
-    $("#loading-center").click(function() {
-      $("#loading").fadeOut(500);
-    });
+  /*Preloading page animation*/
+  $("#loading-center").click(function() {
+    $("#loading").fadeOut(500);
   });
 
   /*Hover animation for different items */
