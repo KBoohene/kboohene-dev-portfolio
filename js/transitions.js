@@ -47,7 +47,7 @@ jQuery(document).ready(function($) {
 
   $("#dot2").hover(
     function() {
-      document.getElementById("section-title").innerHTML = "Cool Dev";
+      document.getElementById("section-title").innerHTML = "Profile";
       $("#section-title").addClass("animated fadeIn");
     },
     function() {
@@ -58,7 +58,7 @@ jQuery(document).ready(function($) {
 
   $("#dot3").hover(
     function() {
-      document.getElementById("section-title").innerHTML = "Code Fanatic";
+      document.getElementById("section-title").innerHTML = "Skills";
       $("#section-title").addClass("animated fadeIn");
     },
     function() {
@@ -69,7 +69,7 @@ jQuery(document).ready(function($) {
 
   $("#dot4").hover(
     function() {
-      document.getElementById("section-title").innerHTML = "React Buff";
+      document.getElementById("section-title").innerHTML = "Projects";
       $("#section-title").addClass("animated fadeIn");
     },
     function() {
