@@ -146,6 +146,33 @@ jQuery(document).ready(function($) {
   });
 
   //TODO: Complete the rest of the modal functions
+
+  //Back End Modal
+  $(".bd-md-trigger").click(function(e) {
+    $("#modal-2").addClass("md-show");
+  });
+
+  $(".bd-md-close").click(function(e) {
+    $("#modal-2").removeClass("md-show");
+  });
+
+  //Framework Modal
+  $(".fr-md-trigger").click(function(e) {
+    $("#modal-3").addClass("md-show");
+  });
+
+  $(".fr-md-close").click(function(e) {
+    $("#modal-3").removeClass("md-show");
+  });
+
+  //Other Skills Modal
+  $(".ot-md-trigger").click(function(e) {
+    $("#modal-4").addClass("md-show");
+  });
+
+  $(".ot-md-close").click(function(e) {
+    $("#modal-4").removeClass("md-show");
+  });
 });
 
 /*Toggles the side menu*/
