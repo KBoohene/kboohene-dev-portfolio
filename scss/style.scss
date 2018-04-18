@@ -501,6 +501,15 @@ footer {
   }
 }
 
+#close-icon {
+  -webkit-transition: -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.65s ease-in-out;
+  &:hover {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+
 .bar-objects {
   padding: 1.5em 0em 0em 3em;
 }
