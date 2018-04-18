@@ -171,7 +171,7 @@
 				</div>
 				<div>
 					<h5>Front End Dev</h5>
-					<span class="skills-font">
+					<span class="skills-font md-trigger" data-modal="modal-1">
 						<span>HTML5,</span>
 						<span>CSS3,</span>
 						<span>JavaScript(ES6)</span>
@@ -185,7 +185,7 @@
 				</div>
 				<div>
 					<h5>Back End Dev</h5>
-					<span class="skills-font">
+					<span class="skills-font md-trigger" data-modal="modal-1">
 						<span>Firebase,</span>
 						<span>Node,</span>
 						<span>PHP,</span>
@@ -225,18 +225,7 @@
 	<div class="react-buff">
 		<div class="row">
 
-			<!-- <div class="col-lg-6">
-				<h1 class="section-headers">
-					Projects
-				</h1>
-			</div>
-
-			<div class="col-lg-6">
-				<div class="box">
-					<div id="section-loading"></div>
-				</div>
-			</div> -->
-
+			<!--TODO: Modal for different projects-->
 			<div class="col-lg-3">
 				<div class="project-card">
 					<div class="project-header">
@@ -381,11 +370,29 @@
 		<span id="cookies">Cookies Policy</span>
 	</div>
 
+	<div class="md-modal md-effect-1" id="modal-1">
+		<div class="md-content">
+			<button class="md-close">Close me!</button>
+		</div>
+	</div>
+
+
+	<div class="md-overlay"></div>
 
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="js/transitions.js"></script>
 	<script type="text/javascript" src="js/scroll-transitions.js"></script>
 	<script type="text/javascript" src="js/progressbar.js"></script>
+
+	<script>
+		$(".md-trigger").click(function (e) {
+			$('#modal-1').addClass('md-show');
+		});
+
+		$('.md-close').click(function (e) {
+			$('#modal-1').removeClass('md-show');
+		})
+	</script>
 </body>
 
 </html>

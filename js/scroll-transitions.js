@@ -86,38 +86,4 @@ jQuery(document).ready(function($) {
       1800
     );
   });
-
-  /*Circular Progressbar for section loading*/
-  let sect_bar = new ProgressBar.Circle("#section-loading", {
-    color: "#aaa",
-
-    strokeWidth: 3,
-    trailWidth: 1,
-    easing: "easeInOut",
-    duration: 1400,
-    from: {
-      color: "#aaa",
-      width: 1
-    },
-    to: {
-      color: "#333",
-      width: 3
-    },
-
-    step: function(state, circle) {
-      circle.path.setAttribute("stroke", state.color);
-      circle.path.setAttribute("stroke-width", state.width);
-
-      var value = Math.round(circle.value() * 100);
-      if (value === 0) {
-        circle.setText("");
-      } else {
-        circle.setText(value + "%  loading");
-      }
-    }
-  });
-
-  sect_bar.animate(0.01);
-
-  /*Circular Progressbar for page loading*/
 });
