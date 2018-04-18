@@ -133,6 +133,17 @@ jQuery(document).ready(function($) {
       $(".hamburger").addClass("is-active");
     }
   });
+
+  /*Modal transitions*/
+
+  //Front End Modal
+  $(".fd-md-trigger").click(function(e) {
+    $("#modal-1").addClass("md-show");
+  });
+
+  $(".fd-md-close").click(function(e) {
+    $("#modal-1").removeClass("md-show");
+  });
 });
 
 /*Toggles the side menu*/

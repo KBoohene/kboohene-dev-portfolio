@@ -171,7 +171,7 @@
 				</div>
 				<div>
 					<h5>Front End Dev</h5>
-					<span class="skills-font md-trigger" data-modal="modal-1">
+					<span class="skills-font fd-md-trigger" data-modal="modal-1">
 						<span>HTML5,</span>
 						<span>CSS3,</span>
 						<span>JavaScript(ES6)</span>
@@ -370,10 +370,11 @@
 		<span id="cookies">Cookies Policy</span>
 	</div>
 
+	<!--Front End Modal-->
 	<div class="md-modal md-effect-1" id="modal-1">
 		<div class="md-content">
 			<div id="close-modal">
-				<i id="close-icon" class="fas fa-times fa-lg md-close"></i>
+				<i id="close-icon" class="fas fa-times fa-lg fd-md-close"></i>
 			</div>
 
 			<div>
@@ -408,13 +409,6 @@
 	<script type="text/javascript" src="js/progress-bars.js"></script>
 
 	<script>
-		$(".md-trigger").click(function (e) {
-			$('#modal-1').addClass('md-show');
-		});
-
-		$('.md-close').click(function (e) {
-			$('#modal-1').removeClass('md-show');
-		})
 	</script>
 </body>
 
