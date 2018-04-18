@@ -435,17 +435,6 @@ footer {
   }
 }
 
-/*Progressbar styling*/
-#section-loading {
-  margin: 20px;
-  width: 350px;
-  height: 350px;
-}
-
-#page-loading {
-  width: 600px;
-  height: 600px;
-}
 //Text in loader
 .progressbar-text {
   font-family: "Roboto", sans-serif;
@@ -484,4 +473,34 @@ footer {
     color: $prim-color;
     cursor: pointer;
   }
+}
+
+/* Progress bars styling*/
+#page-loading {
+  width: 600px;
+  height: 600px;
+}
+
+#html-line {
+  padding-left: 1.5em;
+}
+
+#css-line {
+  padding-left: 2.5em;
+}
+
+#js-line {
+  padding-left: 1em;
+}
+
+#close-modal {
+  padding-left: 1.5em;
+  padding-top: 1em;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.bar-objects {
+  padding: 1.5em 0em 0em 3em;
 }

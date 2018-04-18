@@ -185,7 +185,7 @@
 				</div>
 				<div>
 					<h5>Back End Dev</h5>
-					<span class="skills-font md-trigger" data-modal="modal-1">
+					<span class="skills-font">
 						<span>Firebase,</span>
 						<span>Node,</span>
 						<span>PHP,</span>
@@ -372,10 +372,32 @@
 
 	<div class="md-modal md-effect-1" id="modal-1">
 		<div class="md-content">
-			<button class="md-close">Close me!</button>
+			<div id="close-modal">
+				<i class="fas fa-times fa-lg md-close"></i>
+			</div>
+
+			<div>
+				<h3 style="text-align: center;">
+					Front End Development
+				</h3>
+				<div>
+					<div class="bar-objects">
+						<span>HTML5</span>
+						<span id="html-line"></span>
+					</div>
+					<div class="bar-objects">
+						<span>CSS3</span>
+						<span id="css-line"></span>
+					</div>
+					<div class="bar-objects">
+						<span>JS (ES6)</span>
+						<span id="js-line"></span>
+					</div>
+
+				</div>
+			</div>
 		</div>
 	</div>
-
 
 	<div class="md-overlay"></div>
 
@@ -383,6 +405,7 @@
 	<script type="text/javascript" src="js/transitions.js"></script>
 	<script type="text/javascript" src="js/scroll-transitions.js"></script>
 	<script type="text/javascript" src="js/progressbar.js"></script>
+	<script type="text/javascript" src="js/progress-bars.js"></script>
 
 	<script>
 		$(".md-trigger").click(function (e) {
