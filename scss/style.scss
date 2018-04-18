@@ -53,6 +53,10 @@ main,
   text-align: center;
 }
 
+.code-fan {
+  background-color: $second-color;
+}
+
 main > .intro {
   font-family: "Reem Kufi", sans-serif;
   font-size: 3.75em;
@@ -64,6 +68,11 @@ main > .tagline {
   margin: 1.5rem 0;
   font-weight: 100;
   padding: none;
+}
+
+h5 {
+  font-size: 1.3em;
+  font-weight: bold;
 }
 
 .icons-social i {
@@ -360,14 +369,23 @@ footer {
 //Importing navigation class
 @import "./navigation.scss";
 
+/* Styling for code-fan section*/
 #sect-1,
 #sect-2,
 #sect-3 {
   border-right: 1px white solid;
 }
 
-.code-fan {
-  background-color: $second-color;
+#sect-1,
+#sect-2,
+#sect-3,
+#sect-4 {
+  font-family: "Montserrat", sans-serif;
+  height: 20em;
+  color: $white;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .skill-icons {
@@ -379,20 +397,7 @@ footer {
   font-size: 0.8em;
 }
 
-h5 {
-  font-size: 1.3em;
-  font-weight: bold;
-}
-
-#sect-1,
-#sect-2,
-#sect-3,
-#sect-4 {
-  font-family: "Montserrat", sans-serif;
-  height: 20em;
-  color: $white;
-}
-
+/*Progressbar styling*/
 #section-loading {
   margin: 20px;
   width: 350px;
@@ -407,4 +412,43 @@ h5 {
 .progressbar-text {
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
+}
+
+/* Underline animation skill icons*/
+.skills-font {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+
+  &:before {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 0;
+    background: $prim-color;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+    left: 50%;
+    bottom: 0;
+  }
+
+  &:after {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: $prim-color;
+    transition: width 0.3s ease-in-out;
+    left: 50%;
+    bottom: 0;
+  }
+
+  &:hover:before {
+    width: 50%;
+    left: 0;
+  }
+  &:hover:after {
+    width: 50%;
+  }
 }
