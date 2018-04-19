@@ -203,6 +203,7 @@
 #loading-center-absolute.move {
   transform: rotate(-225deg);
   transition: transform 4s ease-in-out;
+  transition-delay: 2s;
 
   left: 101%;
   transition: left 0.9s ease-in;
