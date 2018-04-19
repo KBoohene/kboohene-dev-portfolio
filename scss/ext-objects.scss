@@ -193,6 +193,26 @@
   animation: animate 2s infinite;
 }
 
+//Page transition animation
+.object.move {
+  border-radius: 0% 0% 0% 0%;
+  transition: border-radius 0.8s;
+  animation: 0s;
+}
+
+#loading-center-absolute.move {
+  left: 95%;
+  -ms-transform: rotate(-225deg);
+  -webkit-transform: rotate(-225deg);
+  transform: rotate(-225deg);
+  transition: left 0.8s ease-in-out;
+}
+/*
+Alter .object class border-top and border-bottom to white
+change border radius to 0
+change .loading-center-absolute, transform: rotate(-225deg); and left to 100%
+*/
+
 #object_one {
   left: 75px;
   top: 75px;
