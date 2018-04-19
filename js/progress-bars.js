@@ -76,7 +76,72 @@ jQuery(document).ready(function($) {
     svgStyle: { width: "70%", height: "50%" }
   });
 
-  //TODO:Add the rest of the modal line animations
+  // React progress line
+  let react_line = new ProgressBar.Line("#react-line", {
+    strokeWidth: 2,
+    easing: "easeInOut",
+    duration: 1400,
+    color: "#FFEA82",
+    trailColor: "#eee",
+    trailWidth: 1,
+    svgStyle: { width: "70%", height: "50%" }
+  });
+
+  // Sass progress line
+  let sass_line = new ProgressBar.Line("#sass-line", {
+    strokeWidth: 2,
+    easing: "easeInOut",
+    duration: 1400,
+    color: "#FFEA82",
+    trailColor: "#eee",
+    trailWidth: 1,
+    svgStyle: { width: "70%", height: "50%" }
+  });
+
+  // Java progress line
+  let java_line = new ProgressBar.Line("#java-line", {
+    strokeWidth: 2,
+    easing: "easeInOut",
+    duration: 1400,
+    color: "#FFEA82",
+    trailColor: "#eee",
+    trailWidth: 1,
+    svgStyle: { width: "70%", height: "50%" }
+  });
+
+  // Python progress line
+  let python_line = new ProgressBar.Line("#python-line", {
+    strokeWidth: 2,
+    easing: "easeInOut",
+    duration: 1400,
+    color: "#FFEA82",
+    trailColor: "#eee",
+    trailWidth: 1,
+    svgStyle: { width: "70%", height: "50%" }
+  });
+
+  // Git progress line
+  let git_line = new ProgressBar.Line("#git-line", {
+    strokeWidth: 2,
+    easing: "easeInOut",
+    duration: 1400,
+    color: "#FFEA82",
+    trailColor: "#eee",
+    trailWidth: 1,
+    svgStyle: { width: "70%", height: "50%" }
+  });
+
+  // heroku progress line
+  let heroku_line = new ProgressBar.Line("#heroku-line", {
+    strokeWidth: 2,
+    easing: "easeInOut",
+    duration: 1400,
+    color: "#FFEA82",
+    trailColor: "#eee",
+    trailWidth: 1,
+    svgStyle: { width: "70%", height: "50%" }
+  });
+
   css_line.animate(0.5);
   js_line.animate(0.7);
   html_line.animate(0.85);
@@ -84,4 +149,10 @@ jQuery(document).ready(function($) {
   php_line.animate(0.9);
   node_line.animate(0.9);
   sql_line.animate(0.85);
+  react_line.animate(0.7);
+  sass_line.animate(0.8);
+  python_line.animate(0.7);
+  heroku_line.animate(0.6);
+  git_line.animate(0.8);
+  java_line.animate(0.7);
 });
