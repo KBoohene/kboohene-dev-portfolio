@@ -32,12 +32,21 @@
 }
 
 .md-show ~ .md-overlay {
-  opacity: 0.9;
+  opacity: 0.95;
   visibility: visible;
 }
 
 /*Animation effect*/
-.md-effect-1 .md-content {
+
+.fd-content {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  border-radius: 5px;
+  width: 35em;
+  height: 15em;
+}
+
+.md-effect-1 .fd-content {
   -webkit-transform: scale(0.7);
   -moz-transform: scale(0.7);
   -ms-transform: scale(0.7);
@@ -48,7 +57,7 @@
   transition: all 0.3s;
 }
 
-.md-show.md-effect-1 .md-content {
+.md-show.md-effect-1 .fd-content {
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
   -ms-transform: scale(1);
@@ -57,13 +66,86 @@
 }
 
 //Modal content
-.md-content {
+
+.fr-content {
   font-family: "Montserrat", sans-serif;
   color: #fff;
-  background-color: $prim-color;
   border-radius: 5px;
   width: 35em;
-  height: 15em;
+  height: 12em;
+}
+
+.md-effect-1 .fr-content {
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.md-show.md-effect-1 .fr-content {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.bd-content {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  border-radius: 5px;
+  width: 35em;
+  height: 17em;
+}
+
+.md-effect-1 .bd-content {
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.md-show.md-effect-1 .bd-content {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.ot-content {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  border-radius: 5px;
+  width: 35em;
+  height: 17em;
+}
+
+.md-effect-1 .ot-content {
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.md-show.md-effect-1 .ot-content {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
 }
 
 /*Splash page animation*/

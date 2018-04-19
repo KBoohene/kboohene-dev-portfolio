@@ -486,12 +486,22 @@ footer {
   padding-left: 1.5em;
 }
 
-#css-line {
+#css-line,
+#node-line {
   padding-left: 2.5em;
 }
 
-#js-line {
+#js-line,
+#fbase-line {
   padding-left: 1em;
+}
+
+#php-line {
+  padding-left: 2.9em;
+}
+
+#sql-line {
+  padding-left: 3.05em;
 }
 
 #close-modal {
