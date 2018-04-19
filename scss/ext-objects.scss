@@ -1,5 +1,4 @@
 @import "./common.scss";
-
 /*Modal Styling */
 
 //Modal Container
@@ -151,6 +150,7 @@
 }
 
 /*Splash page animation*/
+
 #loading {
   background-color: $prim-color;
   height: 100%;
@@ -179,6 +179,7 @@
   -webkit-transform: rotate(-135deg);
   transform: rotate(-135deg);
 }
+
 .object {
   -moz-border-radius: 50% 50% 50% 50%;
   -webkit-border-radius: 50% 50% 50% 50%;
@@ -188,30 +189,25 @@
   border-bottom: 5px solid transparent;
   border-left: 5px solid #fff;
   border-right: 5px solid transparent;
-
-  -webkit-animation: animate 2s infinite;
-  animation: animate 2s infinite;
+  -webkit-animation: animate 2s 4;
+  animation: animate 2s 4;
 }
 
 //Page transition animation
 .object.move {
   border-radius: 0% 0% 0% 0%;
-  transition: border-radius 0.8s;
-  animation: 0s;
+  transition: border-radius 1.75s ease-in-out;
+  transition-delay: 8s;
 }
 
 #loading-center-absolute.move {
-  left: 95%;
-  -ms-transform: rotate(-225deg);
-  -webkit-transform: rotate(-225deg);
   transform: rotate(-225deg);
-  transition: left 0.8s ease-in-out;
+  transition: transform 4s ease-in-out;
+
+  left: 101%;
+  transition: left 0.9s ease-in;
+  transition-delay: 8.6s;
 }
-/*
-Alter .object class border-top and border-bottom to white
-change border radius to 0
-change .loading-center-absolute, transform: rotate(-225deg); and left to 100%
-*/
 
 #object_one {
   left: 75px;
