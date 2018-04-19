@@ -487,12 +487,15 @@ footer {
 }
 
 #css-line,
-#node-line {
+#node-line,
+#java-line {
   padding-left: 2.5em;
 }
 
 #js-line,
-#fbase-line {
+#fbase-line,
+#react-line,
+#python-line {
   padding-left: 1em;
 }
 
@@ -502,6 +505,18 @@ footer {
 
 #sql-line {
   padding-left: 3.05em;
+}
+
+#sass-line {
+  padding-left: 1.65em;
+}
+
+#git-line {
+  padding-left: 3.15em;
+}
+
+#heroku-line {
+  padding-left: 0.8em;
 }
 
 #close-modal {
