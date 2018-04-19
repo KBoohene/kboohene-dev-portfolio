@@ -4,7 +4,7 @@ jQuery(document).ready(function($) {
     strokeWidth: 2,
     easing: "easeInOut",
     duration: 1400,
-    color: "#FFEA82",
+    color: "#487eb0",
     trailColor: "#eee",
     trailWidth: 1,
     svgStyle: { width: "70%", height: "50%" }
@@ -15,7 +15,7 @@ jQuery(document).ready(function($) {
     strokeWidth: 2,
     easing: "easeInOut",
     duration: 1400,
-    color: "#FFEA82",
+    color: "#487eb0",
     trailColor: "#eee",
     trailWidth: 1,
     svgStyle: { width: "70%", height: "50%" }
@@ -26,7 +26,7 @@ jQuery(document).ready(function($) {
     strokeWidth: 2,
     easing: "easeInOut",
     duration: 1400,
-    color: "#FFEA82",
+    color: "#487eb0",
     trailColor: "#eee",
     trailWidth: 1,
     svgStyle: { width: "70%", height: "50%" }
@@ -37,7 +37,7 @@ jQuery(document).ready(function($) {
     strokeWidth: 2,
     easing: "easeInOut",
     duration: 1400,
-    color: "#FFEA82",
+    color: "#487eb0",
     trailColor: "#eee",
     trailWidth: 1,
     svgStyle: { width: "70%", height: "50%" }
@@ -48,7 +48,7 @@ jQuery(document).ready(function($) {
     strokeWidth: 2,
     easing: "easeInOut",
     duration: 1400,
-    color: "#FFEA82",
+    color: "#487eb0",
     trailColor: "#eee",
     trailWidth: 1,
     svgStyle: { width: "70%", height: "50%" }
@@ -59,7 +59,7 @@ jQuery(document).ready(function($) {
     strokeWidth: 2,
     easing: "easeInOut",
     duration: 1400,
-    color: "#FFEA82",
+    color: "#487eb0",
     trailColor: "#eee",
     trailWidth: 1,
     svgStyle: { width: "70%", height: "50%" }
@@ -70,7 +70,7 @@ jQuery(document).ready(function($) {
     strokeWidth: 2,
     easing: "easeInOut",
     duration: 1400,
-    color: "#FFEA82",
+    color: "#487eb0",
     trailColor: "#eee",
     trailWidth: 1,
     svgStyle: { width: "70%", height: "50%" }
@@ -81,7 +81,7 @@ jQuery(document).ready(function($) {
     strokeWidth: 2,
     easing: "easeInOut",
     duration: 1400,
-    color: "#FFEA82",
+    color: "#487eb0",
     trailColor: "#eee",
     trailWidth: 1,
     svgStyle: { width: "70%", height: "50%" }
@@ -92,7 +92,7 @@ jQuery(document).ready(function($) {
     strokeWidth: 2,
     easing: "easeInOut",
     duration: 1400,
-    color: "#FFEA82",
+    color: "#487eb0",
     trailColor: "#eee",
     trailWidth: 1,
     svgStyle: { width: "70%", height: "50%" }
@@ -103,7 +103,7 @@ jQuery(document).ready(function($) {
     strokeWidth: 2,
     easing: "easeInOut",
     duration: 1400,
-    color: "#FFEA82",
+    color: "#487eb0",
     trailColor: "#eee",
     trailWidth: 1,
     svgStyle: { width: "70%", height: "50%" }
@@ -114,7 +114,7 @@ jQuery(document).ready(function($) {
     strokeWidth: 2,
     easing: "easeInOut",
     duration: 1400,
-    color: "#FFEA82",
+    color: "#487eb0",
     trailColor: "#eee",
     trailWidth: 1,
     svgStyle: { width: "70%", height: "50%" }
@@ -125,7 +125,7 @@ jQuery(document).ready(function($) {
     strokeWidth: 2,
     easing: "easeInOut",
     duration: 1400,
-    color: "#FFEA82",
+    color: "#487eb0",
     trailColor: "#eee",
     trailWidth: 1,
     svgStyle: { width: "70%", height: "50%" }
@@ -136,7 +136,7 @@ jQuery(document).ready(function($) {
     strokeWidth: 2,
     easing: "easeInOut",
     duration: 1400,
-    color: "#FFEA82",
+    color: "#487eb0",
     trailColor: "#eee",
     trailWidth: 1,
     svgStyle: { width: "70%", height: "50%" }
@@ -145,14 +145,14 @@ jQuery(document).ready(function($) {
   css_line.animate(0.5);
   js_line.animate(0.7);
   html_line.animate(0.85);
-  fbase_line.animate(0.9);
-  php_line.animate(0.9);
-  node_line.animate(0.9);
-  sql_line.animate(0.85);
-  react_line.animate(0.7);
-  sass_line.animate(0.8);
-  python_line.animate(0.7);
+  fbase_line.animate(0.85);
+  php_line.animate(0.7);
+  node_line.animate(0.8);
+  sql_line.animate(0.7);
+  react_line.animate(0.8);
+  sass_line.animate(0.5);
+  python_line.animate(0.65);
   heroku_line.animate(0.6);
-  git_line.animate(0.8);
+  git_line.animate(0.6);
   java_line.animate(0.7);
 });
