@@ -437,8 +437,8 @@ footer {
 
 //Text in loader
 .progressbar-text {
-  font-family: "Roboto", sans-serif;
-  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
 }
 
 /*Projects card*/
@@ -539,4 +539,11 @@ footer {
 
 .bar-objects {
   padding: 1.5em 0em 0em 3em;
+}
+
+#line-container {
+  position: absolute;
+  left: 26%;
+  top: 70%;
+  width: 130em;
 }

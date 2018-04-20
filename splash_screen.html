@@ -3,15 +3,12 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<link rel="shortcut icon" href="http://simbyone.com/wp-content/uploads/2014/04/3455e6f65c33232a060c28829a49b1cb.png">
 	<title>Loading</title>
-	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic'
-	  rel='stylesheet' type='text/css'>
 
 	<link href="css/style.min.css" rel="stylesheet" type="text/css">
 	<link href="css/reset.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/progressbar.js"></script>
 
 </head>
 <!--TODO:Transition to home page-->
@@ -24,11 +21,12 @@
 				<div class="object" id="object_three"></div>
 				<div class="object" id="object_two"></div>
 				<div class="object" id="object_one"></div>
+			</div>
 
+			<div id="line-container">
+				<div id="loading-line"></div>
 			</div>
-			<div>
-				<!-- <button id="trans">Click Me</button> -->
-			</div>
+
 		</div>
 
 
@@ -36,7 +34,52 @@
 			setTimeout(() => {
 				$(".object ,#loading-center-absolute").addClass("move");
 			}, -1);
+
+			let bar = new ProgressBar.Line("#loading-line", {
+				strokeWidth: 0.5,
+				duration: 7000,
+				color: "#1f1f1f",
+				trailColor: "#a3a3a3",
+				trailWidth: 1,
+				svgStyle: {
+					width: "40%",
+					height: "20%",
+					borderRadius: '8px'
+				},
+				from: {
+					color: "#fff",
+				},
+				to: {
+					color: "#487eb0",
+				},
+				text: {
+					style: {
+						position: 'absolute',
+						top: '30px',
+						left: '18.5%',
+						color: 'white',
+					},
+				},
+
+				step: (state, bar, attachement) => {
+					bar.setText(Math.round(bar.value() * 100) + "%");
+					bar.path.setAttribute('stroke', state.color);
+
+				}
+			});
+			bar.animate(1);
+
+			setTimeout(() => {
+				$(".progressbar-text").addClass("disappear");
+			}, 7000)
 		</script>
+
+		<style>
+			.progressbar-text.disappear {
+				opacity: 0;
+				transition: opacity 1s ease-in-out;
+			}
+		</style>
 
 	</div>
 
