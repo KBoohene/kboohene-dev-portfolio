@@ -152,7 +152,7 @@
 /*Splash page animation*/
 
 #loading {
-  background-color: $prim-color;
+  background-color: $second-color;
   height: 100%;
   width: 100%;
   position: fixed;
@@ -197,7 +197,7 @@
 .object.move {
   border-radius: 0% 0% 0% 0%;
   transition: border-radius 1.75s ease-in-out;
-  transition-delay: 8s;
+  transition-delay: 9s;
 }
 
 #loading-center-absolute.move {
@@ -206,8 +206,8 @@
   transition-delay: 2s;
 
   left: 101%;
-  transition: left 0.9s ease-in;
-  transition-delay: 8.6s;
+  transition: left 0.5s ease-in;
+  transition-delay: 10s;
 }
 
 #object_one {
