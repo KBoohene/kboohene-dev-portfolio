@@ -193,7 +193,7 @@
   animation: animate 2s 4;
 }
 
-//Page transition animation
+//Object exit animation
 .object.move {
   border-radius: 0% 0% 0% 0%;
   transition: border-radius 1.75s ease-in-out;
@@ -210,6 +210,7 @@
   transition-delay: 10s;
 }
 
+/*Div styling of animation object*/
 #object_one {
   left: 75px;
   top: 75px;
