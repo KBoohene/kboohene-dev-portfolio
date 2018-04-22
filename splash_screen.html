@@ -13,6 +13,8 @@
 </head>
 <!--TODO:Transition to home page-->
 
+<!--Spinner object-->
+
 <body>
 	<div id="loading">
 		<div id="loading-center">
@@ -31,10 +33,12 @@
 
 
 		<script>
+			//Alters starting angle of spinner
 			setTimeout(() => {
 				$(".object ,#loading-center-absolute").addClass("move");
 			}, -1);
 
+			//Loading bar config
 			let bar = new ProgressBar.Line("#loading-line", {
 				strokeWidth: 0.5,
 				duration: 9000,
@@ -69,12 +73,15 @@
 			});
 			bar.animate(1);
 
+			//Loading text animation
 			setTimeout(() => {
 				$(".progressbar-text").addClass("disappear");
 			}, 9000)
 		</script>
 
 		<style>
+			/*Styling for disappearing loading text*/
+
 			.progressbar-text.disappear {
 				opacity: 0;
 				transition: opacity 1s ease-in-out;
