@@ -19,13 +19,14 @@
 	<link href="css/themes/seabrook-white.css" rel="stylesheet" type="text/css">
 	<link href="css/flexboxgrid.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="css/animsition.css" rel="stylesheet" type="text/css" />
 
 
 </head>
 
 <body>
 	<!--TODO: Convert page to responsive design (considering bootstrap) -->
-	<main class="main">
+	<main class="main animsition">
 
 		<!--Navigation Bar-->
 		<nav class="nav-bar">
@@ -500,8 +501,12 @@
 	<script type="text/javascript" src="js/scroll-transitions.js"></script>
 	<script type="text/javascript" src="js/progressbar.js"></script>
 	<script type="text/javascript" src="js/progress-bars.js"></script>
+	<script type="text/javascript" src="js/animsition.js"></script>
 
 	<script>
+		$(".animsition").animsition({
+			inClass: 'fade-in',
+		});
 	</script>
 </body>
 
