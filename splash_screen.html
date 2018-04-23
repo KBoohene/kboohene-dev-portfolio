@@ -7,7 +7,9 @@
 
 	<link href="css/style.min.css" rel="stylesheet" type="text/css">
 	<link href="css/reset.css" rel="stylesheet" type="text/css">
+	<link href="css/animsition.css" rel="stylesheet" type="text/css" />
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/animsition.js"></script>
 	<script type="text/javascript" src="js/progressbar.js"></script>
 
 </head>
@@ -16,7 +18,7 @@
 <!--Spinner object-->
 
 <body>
-	<div id="loading">
+	<div id="loading" class="animsition">
 		<div id="loading-center">
 			<div id="loading-center-absolute">
 				<div class="object" id="object_four"></div>
@@ -77,6 +79,10 @@
 			setTimeout(() => {
 				$(".progressbar-text").addClass("disappear");
 			}, 9000)
+
+			$(".animsition").animsition({
+				inClass: 'fade-in'
+			});
 		</script>
 
 		<style>
