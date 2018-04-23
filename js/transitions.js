@@ -85,7 +85,7 @@ jQuery(document).ready(function($) {
 
   $("#dot5").hover(
     function() {
-      document.getElementById("section-title").innerHTML = "Books";
+      document.getElementById("section-title").innerHTML = "Reading List";
       $("#section-title").addClass("animated fadeIn");
     },
     function() {
