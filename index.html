@@ -27,6 +27,7 @@
 				<div class="object" id="object_one"></div>
 			</div>
 
+			<!--Progress Line Bar-->
 			<div id="line-container">
 				<div id="loading-line"></div>
 			</div>
@@ -80,15 +81,16 @@
 				$(".progressbar-text").addClass("disappear");
 			}, 9000)
 
+			//Page Fade Out
 			setTimeout(() => {
 				let $elem = $('#loading');
 				$(".animsition").animsition('out', $elem, "./home.html");
 
 			}, 11000);
 
+			//Page Fade In
 			$(".animsition").animsition({
-				inClass: 'fade-in',
-				outClas: 'fade-out-left-sm'
+				inClass: 'fade-in'
 			});
 		</script>
 
