@@ -1,508 +1,109 @@
-<!DOCTYPE html>
-<html>
-<!--Boilerplate source = https://dev.to/flexdinesh/create-your-developer-landing-page-with-github-pages---42jk -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Loading</title>
 
-	<title>Kwabena | Awesome Dev</title>
-
-	<link rel="icon" href="favicon.ico" type="image/png" />
-
-	<link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">
-	<link href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" rel="stylesheet">
-	<link href="css/reset.css" rel="stylesheet" type="text/css">
 	<link href="css/style.min.css" rel="stylesheet" type="text/css">
-	<link href="css/animate.min.css" rel="stylesheet" type="text/css">
-	<link href="css/themes/seabrook-white.css" rel="stylesheet" type="text/css">
-	<link href="css/flexboxgrid.css" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-
+	<link href="css/reset.css" rel="stylesheet" type="text/css">
+	<link href="css/animsition.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/animsition.js"></script>
+	<script type="text/javascript" src="js/progressbar.js"></script>
 
 </head>
+<!--TODO:Transition to home page-->
+
+<!--Spinner object-->
 
 <body>
-	<!--TODO: Convert page to responsive design (considering bootstrap) -->
-	<main class="main">
-
-		<!--Navigation Bar-->
-		<nav class="nav-bar">
-			<div class="row center-lg">
-				<div class="col-lg-12">
-					<div>
-
-						<!--Dot Style navigation-->
-						<div class="dotstyle dotstyle-fillup">
-							<ul style="margin-left:120px">
-								<li id="li-dot1" class="current">
-									<a id="dot1"></a>
-								</li>
-								<li id="li-dot2">
-									<a id="dot2"></a>
-								</li>
-								<li id="li-dot3">
-									<a id="dot3"></a>
-								</li>
-								<li id="li-dot4">
-									<a id="dot4"></a>
-								</li>
-								<li>
-									<span id="div-dots">|</span>
-								</li>
-								<li id="">
-									<a href="books.html" id="dot5"></a>
-								</li>
-							</ul>
-							<span id='section-title'>
-							</span>
-						</div>
-					</div>
-				</div>
-
+	<div id="loading" class="animsition">
+		<div id="loading-center">
+			<div id="loading-center-absolute">
+				<div class="object" id="object_four"></div>
+				<div class="object" id="object_three"></div>
+				<div class="object" id="object_two"></div>
+				<div class="object" id="object_one"></div>
 			</div>
-		</nav>
 
-		<!--Hamburger Menu-->
-		<div class="hamburger-menu">
-			<div id="hamburger-side-nav">
-				<button class="hamburger hamburger--vortex" type="button">
-					<span class="hamburger-box">
-						<span class="hamburger-inner">
-						</span>
-					</span>
-				</button>
+			<div id="line-container">
+				<div id="loading-line"></div>
 			</div>
-		</div>
-
-
-		<!--Side navigation bar-->
-		<div class="sidebar" id="sidebar">
-			<a href="index.html">
-				<div class="item">
-					Home
-				</div>
-			</a>
-			<a href="books.html">
-				<div class="item">Books</div>
-			</a>
 
 		</div>
 
 
-		<div class="intro">
-			<span id="hello" class="animated fadeIn">Hello, I'm Kwabena!</span>
-		</div>
-		<!--Different taglines-->
-		<div class="tagline">
-			<span id="tag1" style="display:inline-block;">Cool Dev</span> |
-			<span id="tag2" style="display:inline-block;">Code Fanatic </span> |
-			<span id="tag3" style="display:inline-block;">React Buff </span>
-		</div>
+		<script>
+			//Alters starting angle of spinner
+			setTimeout(() => {
+				$(".object ,#loading-center-absolute").addClass("move");
+			}, -1);
 
-		<!-- Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
-		<!--Social Icons-->
-		<div class="icons-social">
-			<a target="_blank" href="https://github.com/KBoohene">
-				<i id="social-1" class="fab fa-github"></i>
-			</a>
-			<a target="blank" href="https://twitter.com/k_boohene">
-				<i id="social-2" class="fab fa-twitter"></i>
-			</a>
-			<a target="_blank" href="https://www.linkedin.com/in/kboohene/">
-				<i id="social-3" class="fab fa-linkedin"></i>
-			</a>
-			<a target="_blank" href="https://medium.com/@okwabse">
-				<i id="social-4" class="fab fa-medium"></i>
-			</a>
-			<a target="_blank" href="https://www.freecodecamp.org">
-				<i id="social-5" class="fab fa-free-code-camp"></i>
-			</a>
-			<a target="_blank" href="https://www.behance.net">
-				<i id="social-6" class="fab fa-behance"></i>
-			</a>
-			<a target="_blank" href="https://codepen.io">
-				<i id="social-7" class="fab fa-codepen"></i>
-			</a>
-		</div>
+			//Loading bar config
+			let bar = new ProgressBar.Line("#loading-line", {
+				strokeWidth: 0.5,
+				duration: 9000,
+				color: "#1f1f1f",
+				trailColor: "#a3a3a3",
+				trailWidth: 1,
+				svgStyle: {
+					width: "40%",
+					height: "20%",
+					borderRadius: '8px'
+				},
+				from: {
+					color: "#fff",
+				},
+				to: {
+					color: "#1f1f1f",
+				},
+				text: {
+					style: {
+						position: 'absolute',
+						top: '30px',
+						left: '18.5%',
+						color: 'white',
+					},
+				},
 
-		<!--Scroll Button-->
-		<div>
-			<div class="scroll-container">
-				<a id="scroll">
-					<span></span>
-				</a>
-			</div>
-		</div>
+				step: (state, bar, attachement) => {
+					bar.setText(Math.round(bar.value() * 100) + "%");
+					bar.path.setAttribute('stroke', state.color);
 
-	</main>
+				}
+			});
+			bar.animate(1);
 
-	<!--Sub page sections-->
+			//Loading text animation
+			setTimeout(() => {
+				$(".progressbar-text").addClass("disappear");
+			}, 9000)
 
-	<!--Profile Section-->
-	<div class="cool-dev">
-		<div class="row">
-			<div class="col-lg-6">
-				<div class="box">
-					<img id="avatar" src="/img/avatar_2.png" alt="profile image">
-				</div>
-			</div>
-			<div class="col-lg-6">
-				<div class="box">
-					<p id="profile-text">
-						Lorem ipsum dolor sit amet, an magna dignissim mea, pro ex iisque feugiat luptatum, mei nostro timeam feugiat no. Vix tibique
-						delectus ei. Velit adipiscing cum ut, mel aeque singulis quaerendum ex. Eum ex causae percipit, simul aperiri recteque
-						per ne. Nonumy persius molestie duo id.Eum unum novum ei, pri probo detracto prodesset ei. Nemore admodum vivendum
-						est ex, dico placerat democritum in eos. Cum falli salutandi iracundia ne. In usu amet mundi elaboraret, te qui amet
-						dicunt, ea vix sale porro. Tantas possit consequat ut duo, vim an salutandi expetenda omittantur.
-					</p>
-				</div>
-			</div>
-		</div>
+			setTimeout(() => {
+				let $elem = $('#loading');
+				$(".animsition").animsition('out', $elem, "./home.html");
+
+			}, 11000);
+
+			$(".animsition").animsition({
+				inClass: 'fade-in',
+				outClas: 'fade-out-left-sm'
+			});
+		</script>
+
+		<style>
+			/*Styling for disappearing loading text*/
+
+			.progressbar-text.disappear {
+				opacity: 0;
+				transition: opacity 1s ease-in-out;
+			}
+		</style>
+
 	</div>
 
-	<!--Skills-->
-	<div class="code-fan">
-		<div class="row">
-			<div class="col-lg-3" id="sect-1">
-				<div class="skill-icons">
-					<i class="fas fa-file-code fa-4x"></i>
-				</div>
-				<div>
-					<h5>Front End Dev</h5>
-					<span class="skills-font fd-md-trigger" data-modal="modal-1">
-						<span>HTML5,</span>
-						<span>CSS3,</span>
-						<span>JavaScript(ES6)</span>
-					</span>
 
-				</div>
-			</div>
-			<div class="col-lg-3" id="sect-2">
-				<div class="skill-icons">
-					<i class="fas fa-database fa-4x"></i>
-				</div>
-				<div>
-					<h5>Back End Dev</h5>
-					<span class="skills-font bd-md-trigger" data-modal="modal-2">
-						<span>Firebase,</span>
-						<span>Node,</span>
-						<span>PHP,</span>
-						<span>SQL</span>
-					</span>
-
-				</div>
-			</div>
-			<div class="col-lg-3" id="sect-3">
-				<div class="skill-icons">
-					<i class="fas fa-object-ungroup fa-4x"></i>
-				</div>
-				<h5>Dev Frameworks</h5>
-				<span class="skills-font fr-md-trigger" data-modal="modal-3">
-					<span>React(JS & Native), </span>
-					<span>Sass</span>
-				</span>
-			</div>
-			<div class="col-lg-3" id="sect-4">
-				<div class="skill-icons">
-					<i class="fas fa-archive fa-4x"></i>
-				</div>
-				<h5>
-					Other Dev Skills
-				</h5>
-				<span class="skills-font ot-md-trigger" data-modal="modal-4">
-					<span>Java,</span>
-					<span>Python,</span>
-					<span>Git,</span>
-					<span>Heroku</span>
-				</span>
-			</div>
-		</div>
-	</div>
-
-	<!--Projects-->
-	<div class="react-buff">
-		<div class="row">
-
-			<div class="col-lg-3">
-				<div class="project-card">
-					<div class="project-header">
-					</div>
-					<h4>MHB app</h4>
-					<div class="project-text">
-						Simple Android application that allows the quick search and viewing of methodist hymns.
-					</div>
-					<div class="project-footer">
-						<a href="">
-							<i class="fas fa-link fa-lg"></i>
-						</a>
-						<a href="https://github.com/KBoohene/mhb_app">
-							<i class="fab fa-github fa-lg"></i>
-						</a>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-lg-3">
-				<div class="project-card">
-					<div class="project-header">
-					</div>
-					<h4>SurfaceMap</h4>
-					<div class="project-text">
-						A mapping application that allows users to view the quality of roads they might use when going on a journey.
-					</div>
-					<div class="project-footer">
-						<a href="">
-							<i class="fas fa-link fa-lg"></i>
-						</a>
-						<a href="https://github.com/KBoohene/SurfaceMap_app">
-							<i class="fab fa-github fa-lg"></i>
-						</a>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-lg-3">
-				<div class="project-card">
-					<div class="project-header">
-					</div>
-					<h4>Crypto-PriceTicker</h4>
-					<div class="project-text">
-						A web application that displays the realtime prices of the top 8 crypto currencies.
-					</div>
-					<div class="project-footer">
-						<a href="">
-							<i class="fas fa-link fa-lg"></i>
-						</a>
-						<a href="https://github.com/KBoohene/crypto-price-ticker">
-							<i class="fab fa-github fa-lg"></i>
-						</a>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-lg-3">
-				<div class="project-card">
-					<div class="project-header">
-					</div>
-					<h4>Cyfa-Beta Web App</h4>
-					<div class="project-text">
-						A web application that allows companies to manage customers that test their applications.
-					</div>
-					<div class="project-footer">
-						<a href="">
-							<i class="fas fa-link fa-lg"></i>
-						</a>
-						<a href="">
-							<i class="fab fa-github fa-lg"></i>
-						</a>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</div>
-
-	<!--Footer-->
-	<footer>
-
-		<div class="row center-lg">
-			<div class="col-lg-6">
-
-				<div class="footer-logo">
-					<a href="index.html">
-						<img id="ft-logo" src="./img/kb_logo.png" alt="kb_logo">
-					</a>
-				</div>
-
-				<div class="footer-contact">
-					<div style="padding-bottom:0.4em;">
-						<a href="tel:+233265057796" id="tel">
-							+233 26 505 7796
-						</a>
-					</div>
-					<div>
-						<a href="mailto:kgboohene@gmail.com" id="email">
-							kgboohene@gmail.com
-						</a>
-					</div>
-				</div>
-
-				<div class="footer-social">
-					<a class="" target="_blank" href="https://www.instagram.com/k.boohene/">
-						<font id="footer-soc-links">Instagram</font>
-					</a>
-					<a class="" target="_blank" href="https://twitter.com/k_boohene">
-						<font id="footer-soc-links">Twitter</font>
-					</a>
-					<a class="" target="_blank" href="https://www.linkedin.com/in/kboohene/">
-						<font id="footer-soc-links">Linkedin</font>
-					</a>
-				</div>
-
-				<div class="footer-navigation">
-					<span>
-						<a href="index.html" id="sitemap">
-							Home
-						</a>
-					</span> |
-					<span>
-						<a href="books.html" id="sitemap">
-							Books
-						</a>
-					</span>
-				</div>
-			</div>
-		</div>
-	</footer>
-
-	<!--Copyright section-->
-	<div class="copyright">
-		<span id="trademark">
-			&copy;
-			<script type="text/javascript">
-				document.write(new Date().getFullYear());
-			</script>
-			KBoohene</span>|
-		<span id="privacy"> Privacy Policy </span>|
-		<span id="cookies">Cookies Policy</span>
-	</div>
-
-	<!--Front End Modal-->
-	<div class="md-modal md-effect-1" id="modal-1">
-		<div class="fd-content">
-			<div id="close-modal">
-				<i id="close-icon" class="fas fa-times fa-lg fd-md-close"></i>
-			</div>
-
-			<div>
-				<h3 style="text-align: center;">
-					Front End Development
-				</h3>
-				<div>
-					<div class="bar-objects">
-						<span>HTML5</span>
-						<span id="html-line"></span>
-					</div>
-					<div class="bar-objects">
-						<span>CSS3</span>
-						<span id="css-line"></span>
-					</div>
-					<div class="bar-objects">
-						<span>JS (ES6)</span>
-						<span id="js-line"></span>
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!--Back end modal-->
-	<div class="md-modal md-effect-1" id="modal-2">
-		<div class="bd-content">
-			<div id="close-modal">
-				<i id="close-icon" class="fas fa-times fa-lg bd-md-close"></i>
-			</div>
-
-			<div>
-				<h3 style="text-align: center;">
-					Back End Development
-				</h3>
-				<div>
-					<div class="bar-objects">
-						<span>Firebase</span>
-						<span id="fbase-line"></span>
-					</div>
-					<div class="bar-objects">
-						<span>Node</span>
-						<span id="node-line"></span>
-					</div>
-					<div class="bar-objects">
-						<span>PHP</span>
-						<span id="php-line"></span>
-					</div>
-					<div class="bar-objects">
-						<span>SQL</span>
-						<span id="sql-line"></span>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</div>
-
-	<!--Frameworks modal-->
-	<div class="md-modal md-effect-1" id="modal-3">
-		<div class="fr-content">
-			<div id="close-modal">
-				<i id="close-icon" class="fas fa-times fa-lg fr-md-close"></i>
-			</div>
-
-			<div>
-				<h3 style="text-align: center;">
-					Frameworks
-				</h3>
-				<div>
-					<div class="bar-objects">
-						<span>React</span>
-						<span id="react-line"></span>
-					</div>
-					<div class="bar-objects">
-						<span>Sass</span>
-						<span id="sass-line"></span>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</div>
-
-	<!--Other skills modal-->
-	<div class="md-modal md-effect-1" id="modal-4">
-		<div class="ot-content">
-			<div id="close-modal">
-				<i id="close-icon" class="fas fa-times fa-lg ot-md-close"></i>
-			</div>
-
-			<div>
-				<h3 style="text-align: center;">
-					Other Dev Skills
-				</h3>
-				<div>
-					<div class="bar-objects">
-						<span>Java</span>
-						<span id="java-line"></span>
-					</div>
-					<div class="bar-objects">
-						<span>Python</span>
-						<span id="python-line"></span>
-					</div>
-					<div class="bar-objects">
-						<span>Git</span>
-						<span id="git-line"></span>
-					</div>
-					<div class="bar-objects">
-						<span>Heroku</span>
-						<span id="heroku-line"></span>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</div>
-
-	<div class="md-overlay"></div>
-
-	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-	<script type="text/javascript" src="js/transitions.js"></script>
-	<script type="text/javascript" src="js/scroll-transitions.js"></script>
-	<script type="text/javascript" src="js/progressbar.js"></script>
-	<script type="text/javascript" src="js/progress-bars.js"></script>
-
-	<script>
-	</script>
 </body>
 
 </html>
