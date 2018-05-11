@@ -1,18 +1,27 @@
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
   //Arrow animation for page scrolling
-  $("#scroll").click(function(e) {
+  $("#scroll").click(function (e) {
     e.preventDefault();
     var position = $(".cool-dev").offset().top;
-    $("body, html").animate(
-      {
+    $("body, html").animate({
         scrollTop: position
       },
       1200
     );
   });
 
+  $("#scroll-2").click(function (e) {
+    e.preventDefault();
+    var position = $(".book-list").offset().top;
+    $("body, html").animate({
+        scrollTop: position
+      },
+      1500
+    );
+  });
+
   /*Preloading page animation*/
-  $("#loading-center").click(function() {
+  $("#loading-center").click(function () {
     $("#loading").fadeOut(500);
   });
 
@@ -20,75 +29,75 @@ jQuery(document).ready(function($) {
 
   //Added pulse animation on hover to social icons
   $("[id^=social]").hover(
-    function() {
+    function () {
       $(this).addClass("animated infinite pulse");
     },
-    function() {
+    function () {
       $(this).removeClass("animated infinite pulse");
     }
   );
 
   //Added flash animation on hover to skills icons
   $("[id^=skills]").hover(
-    function() {
+    function () {
       $(this).addClass("animated infinite pulse");
     },
-    function() {
+    function () {
       $(this).removeClass("animated infinite pulse");
     }
   );
 
   /*Change section title based on dots hover*/
   $("#dot1").hover(
-    function() {
+    function () {
       document.getElementById("section-title").innerHTML = "Welcome";
       $("#section-title").addClass("animated fadeIn");
     },
-    function() {
+    function () {
       document.getElementById("section-title").innerHTML = "";
       $("#section-title").removeClass("animated fadeIn");
     }
   );
 
   $("#dot2").hover(
-    function() {
+    function () {
       document.getElementById("section-title").innerHTML = "Profile";
       $("#section-title").addClass("animated fadeIn");
     },
-    function() {
+    function () {
       document.getElementById("section-title").innerHTML = "";
       $("#section-title").removeClass("animated fadeIn");
     }
   );
 
   $("#dot3").hover(
-    function() {
+    function () {
       document.getElementById("section-title").innerHTML = "Skills";
       $("#section-title").addClass("animated fadeIn");
     },
-    function() {
+    function () {
       document.getElementById("section-title").innerHTML = "";
       $("#section-title").removeClass("animated fadeIn");
     }
   );
 
   $("#dot4").hover(
-    function() {
+    function () {
       document.getElementById("section-title").innerHTML = "Projects";
       $("#section-title").addClass("animated fadeIn");
     },
-    function() {
+    function () {
       document.getElementById("section-title").innerHTML = "";
       $("#section-title").removeClass("animated fadeIn");
     }
   );
 
   $("#dot5").hover(
-    function() {
+    function () {
       document.getElementById("section-title").innerHTML = "Reading List";
       $("#section-title").addClass("animated fadeIn");
     },
-    function() {
+    function () {
       document.getElementById("section-title").innerHTML = "";
       $("#section-title").removeClass("animated fadeIn");
     }
@@ -137,40 +146,40 @@ jQuery(document).ready(function($) {
   /*Modal transitions*/
 
   //Front End Modal
-  $(".fd-md-trigger").click(function(e) {
+  $(".fd-md-trigger").click(function (e) {
     $("#modal-1").addClass("md-show");
   });
 
-  $(".fd-md-close").click(function(e) {
+  $(".fd-md-close").click(function (e) {
     $("#modal-1").removeClass("md-show");
   });
 
   //TODO: Complete the rest of the modal functions
 
   //Back End Modal
-  $(".bd-md-trigger").click(function(e) {
+  $(".bd-md-trigger").click(function (e) {
     $("#modal-2").addClass("md-show");
   });
 
-  $(".bd-md-close").click(function(e) {
+  $(".bd-md-close").click(function (e) {
     $("#modal-2").removeClass("md-show");
   });
 
   //Framework Modal
-  $(".fr-md-trigger").click(function(e) {
+  $(".fr-md-trigger").click(function (e) {
     $("#modal-3").addClass("md-show");
   });
 
-  $(".fr-md-close").click(function(e) {
+  $(".fr-md-close").click(function (e) {
     $("#modal-3").removeClass("md-show");
   });
 
   //Other Skills Modal
-  $(".ot-md-trigger").click(function(e) {
+  $(".ot-md-trigger").click(function (e) {
     $("#modal-4").addClass("md-show");
   });
 
-  $(".ot-md-close").click(function(e) {
+  $(".ot-md-close").click(function (e) {
     $("#modal-4").removeClass("md-show");
   });
 });
