@@ -166,14 +166,16 @@ a {
   height: 90px;
 }
 
-#scroll :hover {
+#scroll :hover,
+#scroll-2 :hover {
   cursor: pointer;
   opacity: 0.5;
 }
 
 /* Button animation */
 
-#scroll span {
+#scroll span,
+#scroll-2 span {
   position: absolute;
   left: 50%;
   width: 24px;
@@ -586,4 +588,17 @@ footer {
   font-family: "Montserrat", sans-serif;
   font-weight: 100;
   margin-top: 25px;
+}
+
+.welcome-msg {
+  height: 3.5em;
+  background-color: $second-color;
+}
+
+#welcome-txt {
+  padding: 20px 20px 20px 40px;
+  font-size: 30px;
+  color: $white;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
 }
