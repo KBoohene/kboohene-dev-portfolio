@@ -104,7 +104,8 @@ a {
 #tag1,
 #tag2,
 #tag3,
-#hello {
+#hello,
+#book-quote {
   animation-duration: $long-animation;
 }
 
@@ -576,7 +577,7 @@ footer {
 /*----------------------------------------------------------------------------------------*/
 
 //Book Page
-#book-quote {
+.quote-container {
   text-align: left;
   font-size: 50px;
   padding: 0px 100px 0px 100px;
