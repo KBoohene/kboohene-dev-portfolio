@@ -9,63 +9,97 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Reading List</title>
+
+  <link rel="icon" href="favicon.ico" type="image/png" />
+
+  <link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" rel="stylesheet">
+  <link href="css/reset.css" rel="stylesheet" type="text/css">
   <link href="css/style.min.css" rel="stylesheet" type="text/css">
+  <link href="css/animate.min.css" rel="stylesheet" type="text/css">
+  <link href="css/themes/seabrook-white.css" rel="stylesheet" type="text/css">
   <link href="css/flexboxgrid.css" rel="stylesheet" type="text/css">
-
-  <script type="text/javascript" src="js/progressbar.js"></script>
-  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="css/animsition.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-  <div class="row center-lg">
-    <div class="box">
-      <div id="page-loading"></div>
+  <main class="books-home">
+    <div class="intro">
+      <div id="book-quote">
+        “A reader lives a thousand lives before he dies, said Jojen. The man who never reads lives only one.”
+        <div id="quote-author"> - George R.R. Martin, A Dance with Dragons</div>
+      </div>
+
     </div>
+  </main>
+  <div class="book-list">
+
   </div>
+  <!--Footer-->
+  <footer>
 
-  <script>
-    let page_bar = new ProgressBar.Circle("#page-loading", {
-      color: "#aaa",
+    <div class="row center-lg">
+      <div class="col-lg-6">
 
-      strokeWidth: 3,
-      trailWidth: 1,
-      easing: "easeInOut",
-      duration: 1400,
-      from: {
-        color: "#aaa",
-        width: 1
-      },
-      to: {
-        color: "#333",
-        width: 3
-      },
+        <div class="footer-logo">
+          <a href="index.html">
+            <img id="ft-logo" src="./img/kb_logo.png" alt="kb_logo">
+          </a>
+        </div>
+        <!--Phone Number-->
+        <div class="footer-contact">
+          <div style="padding-bottom:0.4em;">
+            <a href="tel:+233265057796" id="tel">
+              +233 26 505 7796
+            </a>
+          </div>
+          <!--Email-->
+          <div>
+            <a href="mailto:kgboohene@gmail.com" id="email">
+              kgboohene@gmail.com
+            </a>
+          </div>
+        </div>
 
-      step: function (state, circle) {
-        circle.path.setAttribute("stroke", state.color);
-        circle.path.setAttribute("stroke-width", state.width);
+        <!--Footer Social Icons-->
+        <div class="footer-social">
+          <a class="" target="_blank" href="https://www.instagram.com/k.boohene/">
+            <font id="footer-soc-links">Instagram</font>
+          </a>
+          <a class="" target="_blank" href="https://twitter.com/k_boohene">
+            <font id="footer-soc-links">Twitter</font>
+          </a>
+          <a class="" target="_blank" href="https://www.linkedin.com/in/kboohene/">
+            <font id="footer-soc-links">Linkedin</font>
+          </a>
+        </div>
 
-        var value = Math.round(circle.value() * 100);
-        if (value === 0) {
-          circle.setText("");
-        } else {
-          circle.setText(value + "%  loading");
-        }
-      }
-    });
+        <!--Sitemap-->
+        <div class="footer-navigation">
+          <span>
+            <a href="index.html" id="sitemap">
+              Home
+            </a>
+          </span> |
+          <span>
+            <a href="books.html" id="sitemap">
+              Reading List
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    page_bar.animate(0.01);
-  </script>
-
-
-  <!-- <script type="text/javascript" src="js/transitions.js"></script>
-  <script type="text/javascript" src="js/scroll-transitions.js"></script> -->
+  <!--Loading of scripts-->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 
 </body>
 

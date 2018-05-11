@@ -1,8 +1,8 @@
 /*Styling for hamburger side nav*/
+
 $hamburger-layer-color: #fff;
 $hamburger-layer-height: 2px;
 $hamburger-layer-width: 30px;
-
 @import "./hamburgers/hamburgers.scss";
 @import "./common.scss";
 @import "./ext-objects.scss";
@@ -58,13 +58,13 @@ main,
   background-color: $second-color;
 }
 
-main > .intro {
+main>.intro {
   font-family: "Reem Kufi", sans-serif;
   font-size: 3.75em;
   font-weight: 600;
 }
 
-main > .tagline {
+main>.tagline {
   font-size: 1.5rem;
   margin: 1.5rem 0;
   font-weight: 100;
@@ -92,6 +92,7 @@ h5 {
 }
 
 /*Removed underline from icons*/
+
 a {
   text-decoration: none;
 }
@@ -99,6 +100,7 @@ a {
 /*Animation durations*/
 
 /*FadeIn animation*/
+
 #tag1,
 #tag2,
 #tag3,
@@ -107,6 +109,7 @@ a {
 }
 
 /*Pulse animation*/
+
 #social-1,
 #social-2,
 #social-3,
@@ -118,6 +121,7 @@ a {
 }
 
 /*Pulse animation for skills icons*/
+
 #skills-1,
 #skills-2,
 #skills-3,
@@ -135,14 +139,17 @@ a {
 #tag3:hover {
   cursor: pointer;
 }
+
 /*Scroll down button
 * Source: https://gist.github.com/CodeMyUI/64383984c2b17f2eba2e71ee28a9cd7c
 */
 
 /*Container holding button*/
+
 .scroll-container:hover {
   cursor: pointer;
 }
+
 .scroll-container {
   margin-top: 80px;
   position: relative;
@@ -158,12 +165,14 @@ a {
   width: 90px;
   height: 90px;
 }
+
 #scroll :hover {
   cursor: pointer;
   opacity: 0.5;
 }
 
 /* Button animation */
+
 #scroll span {
   position: absolute;
   left: 50%;
@@ -192,6 +201,7 @@ a {
     opacity: 0;
   }
 }
+
 @keyframes sdb {
   0% {
     transform: rotate(-45deg) translate(0, 0);
@@ -207,15 +217,14 @@ a {
 }
 
 /*Underline animation for tag lines*/
+
 [id^="tag"] {
   position: relative;
   color: rgb(255, 255, 255);
   text-decoration: none;
-
   &:hover {
     color: rgb(255, 255, 255);
   }
-
   &:before {
     content: "";
     position: absolute;
@@ -230,7 +239,6 @@ a {
     -webkit-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
   }
-
   &:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
@@ -239,6 +247,7 @@ a {
 }
 
 /*Hover shadow for social icons*/
+
 [id^="soc"]:hover {
   background-color: #7f8fa6;
   opacity: 0.3;
@@ -247,12 +256,14 @@ a {
 }
 
 /*Avatar styling*/
+
 #avatar {
   width: 65%;
   border-radius: 50%;
 }
 
 /*Profile text*/
+
 #profile-text {
   text-align: justify;
   padding: 50px 2em 0em 0em;
@@ -260,9 +271,11 @@ a {
 }
 
 /*Styling for downloaded icons*/
+
 .dowload-icons {
   height: 90px;
 }
+
 .skill-icons {
   padding: 0.5em;
   margin-top: 1.5em;
@@ -274,6 +287,7 @@ a {
 }
 
 /*Footer styling*/
+
 footer {
   color: #fff;
   width: 100%;
@@ -292,6 +306,7 @@ footer {
 }
 
 /*Footer logo*/
+
 .footer-logo {
   height: 6em;
 }
@@ -305,6 +320,7 @@ footer {
 }
 
 /*Social links in footer*/
+
 #footer-soc-links {
   font-size: 17px;
   font-weight: 500;
@@ -317,6 +333,7 @@ footer {
 }
 
 /*Hovering email transition*/
+
 #email {
   border-bottom: 5px solid $prim-color;
   padding-bottom: 1.5px;
@@ -328,6 +345,7 @@ footer {
 }
 
 /* Contact styling */
+
 #email,
 #tel {
   font-weight: 700;
@@ -336,6 +354,7 @@ footer {
 }
 
 /*Sitemap navigation styling */
+
 #sitemap {
   font-size: 0.7em;
   color: #fff;
@@ -349,6 +368,7 @@ footer {
 }
 
 /*Copyright styling*/
+
 #trademark,
 #cookies,
 #privacy {
@@ -369,8 +389,8 @@ footer {
 
 //Importing navigation class
 @import "./navigation.scss";
-
 /* Styling for code-fan section*/
+
 #sect-1,
 #sect-2,
 #sect-3 {
@@ -392,12 +412,12 @@ footer {
 }
 
 /* Underline animation skill icons*/
+
 .skills-font {
   display: inline-block;
   position: relative;
   text-decoration: none;
   font-size: 0.8em;
-
   &:before {
     display: block;
     position: absolute;
@@ -409,7 +429,6 @@ footer {
     left: 50%;
     bottom: 0;
   }
-
   &:after {
     display: block;
     position: absolute;
@@ -421,11 +440,9 @@ footer {
     left: 50%;
     bottom: 0;
   }
-
   &:hover {
     cursor: pointer;
   }
-
   &:hover:before {
     width: 50%;
     left: 0;
@@ -467,6 +484,7 @@ footer {
   width: 13.5em;
   height: 39%;
 }
+
 .project-footer {
   i {
     color: black;
@@ -478,6 +496,7 @@ footer {
 }
 
 /* Progress bars styling*/
+
 #page-loading {
   width: 600px;
   height: 600px;
@@ -521,6 +540,7 @@ footer {
 }
 
 /*Modal Styling for close modal*/
+
 #close-modal {
   padding-left: 1.5em;
   padding-top: 1em;
@@ -549,4 +569,21 @@ footer {
   left: 26%;
   top: 70%;
   width: 130em;
+}
+
+/*----------------------------------------------------------------------------------------*/
+
+//Book Page
+#book-quote {
+  text-align: left;
+  font-size: 50px;
+  padding: 0px 100px 0px 100px;
+  margin-top: -20px;
+}
+
+#quote-author {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  margin-top: 25px;
 }
