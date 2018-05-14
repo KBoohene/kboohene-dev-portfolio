@@ -640,18 +640,31 @@ footer {
 .sect-headers {
   margin-top: 1em;
   font-size: 2em;
-  margin-bottom: 1em;
+  margin-bottom: 0.8em;
   color: $second-color;
 }
 
-.author-links {
+//Hyperlinks container
+.book-links {
   margin-left: 37em;
   font-size: 14px;
   &:hover {
     cursor: pointer;
   }
+  & a {
+    text-decoration: none;
+    color: $second-color;
+  }
 }
 
+//Author and more info hyperlinks
+#info-link :hover,
+#author-link :hover {
+  color: $prim-color;
+  text-decoration: underline;
+}
+
+//Book data font styling
 #author-name {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
