@@ -591,7 +591,7 @@ footer {
   margin-top: 25px;
 }
 
-.welcome-msg {
+.book-nav {
   height: 3.5em;
   background-color: $second-color;
 }
@@ -612,4 +612,19 @@ footer {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.hidden-nav {
+  height: 3.5em;
+  display: none;
+}
+
+.reveal {
+  display: block;
 }

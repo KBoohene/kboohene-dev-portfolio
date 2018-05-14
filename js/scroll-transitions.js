@@ -1,4 +1,4 @@
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
   /*Change dot navigation based on sections*/
   $(window).scroll(() => {
     //Section heights
@@ -40,11 +40,10 @@ jQuery(document).ready(function($) {
   /*Scoll animation for different taglines*/
 
   //cool-dev
-  $("#tag1, #dot2").click(function(e) {
+  $("#tag1, #dot2").click(function (e) {
     e.preventDefault();
     var position = $(".cool-dev").offset().top;
-    $("body, html").animate(
-      {
+    $("body, html").animate({
         scrollTop: position
       },
       1200
@@ -52,11 +51,10 @@ jQuery(document).ready(function($) {
   });
 
   //code-fanatic
-  $("#tag2, #dot3").click(function(e) {
+  $("#tag2, #dot3").click(function (e) {
     e.preventDefault();
     var position = $(".code-fan").offset().top;
-    $("body, html").animate(
-      {
+    $("body, html").animate({
         scrollTop: position
       },
       1500
@@ -64,11 +62,10 @@ jQuery(document).ready(function($) {
   });
 
   //react-buff
-  $("#tag3, #dot4").click(function(e) {
+  $("#tag3, #dot4").click(function (e) {
     e.preventDefault();
     var position = $(".react-buff").offset().top;
-    $("body, html").animate(
-      {
+    $("body, html").animate({
         scrollTop: position
       },
       1800
@@ -76,11 +73,10 @@ jQuery(document).ready(function($) {
   });
 
   //home
-  $("#dot1").click(function(e) {
+  $("#dot1").click(function (e) {
     e.preventDefault();
     var position = $(".main").offset().top;
-    $("body, html").animate(
-      {
+    $("body, html").animate({
         scrollTop: position
       },
       1800
