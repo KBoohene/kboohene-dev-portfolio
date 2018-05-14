@@ -602,3 +602,14 @@ footer {
   color: $white;
   font-family: "Montserrat", sans-serif;
 }
+
+.book-sections {
+  border-bottom: 1px solid $second-color;
+  height: 6em;
+}
+
+.book-list {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
