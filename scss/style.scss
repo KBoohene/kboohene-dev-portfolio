@@ -609,7 +609,8 @@ footer {
 //Container for book details
 .book-sections {
   border-bottom: 1px solid $second-color;
-  height: 6em;
+  height: 4.7em;
+  text-align: justify;
 }
 
 //Container for book list
@@ -633,4 +634,37 @@ footer {
 
 .reveal {
   display: block;
+}
+
+//Book Section Headers
+.sect-headers {
+  margin-top: 1em;
+  font-size: 2em;
+  margin-bottom: 1em;
+  color: $second-color;
+}
+
+.author-links {
+  margin-left: 37em;
+  font-size: 14px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+#author-name {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+#book-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 24px;
+}
+
+.book-data {
+  padding: 22px 0px 5px 0px;
 }
