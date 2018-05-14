@@ -23,7 +23,7 @@ jQuery(document).ready(function ($) {
   //Navigate to series book section
   $("#sect-series").click(function (e) {
     e.preventDefault();
-    var position = $("#series-sect").offset().top;
+    var position = $("#series-sect").offset().top - 100;
     $("body, html").animate({
         scrollTop: position
       },
@@ -34,7 +34,7 @@ jQuery(document).ready(function ($) {
   //Navigate to singles book section
   $("#sect-singles").click(function (e) {
     e.preventDefault();
-    var position = $("#singles-sect").offset().top;
+    var position = $("#singles-sect").offset().top - 100;
     $("body, html").animate({
         scrollTop: position
       },
