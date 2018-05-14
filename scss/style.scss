@@ -600,7 +600,7 @@ footer {
 
 //Text on navbar
 #welcome-txt {
-  padding: 20px 20px 20px 40px;
+  padding: 16px 20px 20px 20px;
   font-size: 30px;
   color: $white;
   font-family: "Montserrat", sans-serif;
@@ -634,6 +634,19 @@ footer {
 
 .reveal {
   display: block;
+}
+
+#nav-links {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: $white;
+  padding: 24px 0px 0px 145px;
+}
+
+#sect-series:hover,
+#sect-singles:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 //Book Section Headers

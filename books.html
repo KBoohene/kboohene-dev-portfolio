@@ -87,19 +87,24 @@
   <!--Section for list of books and authors-->
   <div class="book-list">
     <!--Navigation Bar-->
-    <div class="book-nav">
+    <nav class="book-nav">
       <!--TODO: Animate Text
           TODO: Convert section to navigation bar
       -->
-      <p id="welcome-txt" class="">
-        Reading List
-      </p>
-      <!-- <ul>
-        <li>Series</li>
-        <li>Singles</li>
-      </ul> -->
-    </div>
-    <!--Takes navbar position after scrolling-->
+      <div class="row" style="width:100%">
+        <div class="col-lg-4">
+          <p id="welcome-txt">
+            Reading List
+          </p>
+
+        </div>
+        <div class="col-lg-8" id="nav-links">
+          <span id="sect-series">Series</span> |
+          <span id="sect-singles">Singles</span>
+        </div>
+      </div>
+    </nav>
+    <!--Takes navbar position after fixed scrolling-->
     <div class="hidden-nav"></div>
 
     <!--Reading list-->
