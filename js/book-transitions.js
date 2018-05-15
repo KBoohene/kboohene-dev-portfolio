@@ -1,4 +1,4 @@
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
   //Fix navbar to the top based on scroll
   $(window).scroll(() => {
     let Ws = $(this).scrollTop();
@@ -41,11 +41,10 @@ jQuery(document).ready(function($) {
   });
 
   //Navigate to series book section
-  $("#sect-series").click(function(e) {
+  $("#sect-series").click(function (e) {
     e.preventDefault();
     var position = $("#series-sect").offset().top - 100;
-    $("body, html").animate(
-      {
+    $("body, html").animate({
         scrollTop: position
       },
       1500
@@ -53,14 +52,14 @@ jQuery(document).ready(function($) {
   });
 
   //Navigate to singles book section
-  $("#sect-singles").click(function(e) {
+  $("#sect-singles").click(function (e) {
     e.preventDefault();
     var position = $("#singles-sect").offset().top - 100;
-    $("body, html").animate(
-      {
+    $("body, html").animate({
         scrollTop: position
       },
       1500
     );
   });
+
 });

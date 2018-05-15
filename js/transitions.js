@@ -182,6 +182,31 @@ jQuery(document).ready(function ($) {
   $(".ot-md-close").click(function (e) {
     $("#modal-4").removeClass("md-show");
   });
+
+  //Notification for skills hover
+  $("#sect-1").hover(function () {
+    $('.circle-1').addClass("animated infinite flash ");
+  }, function () {
+    $('.circle-1').removeClass("animated infinite flash");
+  });
+
+  $("#sect-2").hover(function () {
+    $('.circle-2').addClass("animated infinite flash ");
+  }, function () {
+    $('.circle-2').removeClass("animated infinite flash");
+  });
+
+  $("#sect-3").hover(function () {
+    $('.circle-3').addClass("animated infinite flash ");
+  }, function () {
+    $('.circle-3').removeClass("animated infinite flash");
+  });
+
+  $("#sect-4").hover(function () {
+    $('.circle-4').addClass("animated infinite flash ");
+  }, function () {
+    $('.circle-4').removeClass("animated infinite flash");
+  });
 });
 
 /*Toggles the side menu*/
