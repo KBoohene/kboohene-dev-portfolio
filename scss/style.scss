@@ -267,7 +267,7 @@ a {
 
 /*Profile text*/
 
-#profile-text {
+.profile-text {
   text-align: justify;
   padding: 50px 2em 0em 0em;
   font-family: "Reem Kufi", sans-serif;
@@ -596,6 +596,16 @@ footer {
 
 .circle-container {
   padding: 50px 0px 0px 127px;
+}
+
+#reading-link {
+  a {
+    color: $prim-color;
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
 }
 
 /*----------------------------------------------------------------------------------------*/
