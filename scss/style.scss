@@ -604,6 +604,7 @@ footer {
   font-size: 30px;
   color: $white;
   font-family: "Montserrat", sans-serif;
+  visibility: hidden;
 }
 
 //Container for book details
@@ -641,6 +642,7 @@ footer {
   font-size: 20px;
   color: $white;
   padding: 24px 0px 0px 145px;
+  visibility: hidden;
 }
 
 #sect-series:hover,
