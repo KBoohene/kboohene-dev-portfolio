@@ -20,7 +20,7 @@ jQuery(document).ready(function ($) {
 
   //Navbar animations
   $(window).scroll(() => {
-    let Ws = $(this).scrollTop() + 500;
+    let Ws = $(this).scrollTop() + 200;
     let bN = $(".book-list").offset().top;
 
     if (Ws >= bN) {
