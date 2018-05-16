@@ -742,9 +742,32 @@ footer {
 .why-read {
   display: flex;
   flex-direction: column;
-  min-height: 60vh;
+  min-height: 70vh;
   justify-content: center;
   padding: 0 30px;
   text-align: center;
   background-color: $second-color;
+  font-size: 18px;
+  color: $white;
+  font-family: "Montserrat", sans-serif;
+}
+
+#reading-phrases {
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+
+.highlight {
+  color: $prim-color;
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+#reading-paragraph {
+  line-height: 2em;
+  font-size: 18px;
+  text-align: justify;
+  padding: 0px 280px 0px 280px;
 }

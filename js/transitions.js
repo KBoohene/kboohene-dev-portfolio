@@ -12,7 +12,7 @@ jQuery(document).ready(function ($) {
 
   $("#scroll-2").click(function (e) {
     e.preventDefault();
-    var position = $(".book-list").offset().top;
+    var position = $(".why-read").offset().top - 130;
     $("body, html").animate({
         scrollTop: position
       },
