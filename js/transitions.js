@@ -20,6 +20,16 @@ jQuery(document).ready(function ($) {
     );
   });
 
+  $("#reading-scroll").click(function (e) {
+    e.preventDefault();
+    var position = $(".book-nav").offset().top;
+    $("body, html").animate({
+        scrollTop: position
+      },
+      1500
+    );
+  });
+
   /*Preloading page animation*/
   $("#loading-center").click(function () {
     $("#loading").fadeOut(500);
