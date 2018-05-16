@@ -737,3 +737,14 @@ footer {
 .book-data {
   padding: 22px 0px 5px 0px;
 }
+
+///////////////////////////////
+.why-read {
+  display: flex;
+  flex-direction: column;
+  min-height: 60vh;
+  justify-content: center;
+  padding: 0 30px;
+  text-align: center;
+  background-color: $second-color;
+}
