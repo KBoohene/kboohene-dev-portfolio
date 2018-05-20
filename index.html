@@ -37,9 +37,9 @@
 
 		<script>
 			//Alters starting angle of spinner
-			setTimeout(() => {
-				$(".object ,#loading-center-absolute").addClass("move");
-			}, -1);
+			// setTimeout(() => {
+			// 	$(".object ,#loading-center-absolute").addClass("move");
+			// }, -1);
 
 			//Loading bar config
 			let bar = new ProgressBar.Line("#loading-line", {
@@ -77,16 +77,16 @@
 			bar.animate(1);
 
 			//Loading text animation
-			setTimeout(() => {
-				$(".progressbar-text").addClass("disappear");
-			}, 9000)
+			// setTimeout(() => {
+			// 	$(".progressbar-text").addClass("disappear");
+			// }, 9000)
 
 			//Page Fade Out
-			setTimeout(() => {
-				let $elem = $('#loading');
-				$(".animsition").animsition('out', $elem, "./home.html");
+			// setTimeout(() => {
+			// 	let $elem = $('#loading');
+			// 	$(".animsition").animsition('out', $elem, "./home.html");
 
-			}, 11000);
+			// }, 11000);
 
 			//Page Fade In
 			$(".animsition").animsition({
@@ -97,10 +97,10 @@
 		<style>
 			/*Styling for disappearing loading text*/
 
-			.progressbar-text.disappear {
+			/* .progressbar-text.disappear {
 				opacity: 0;
 				transition: opacity 1s ease-in-out;
-			}
+			} */
 		</style>
 
 	</div>
