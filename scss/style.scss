@@ -468,6 +468,7 @@ footer {
   font-family: "Montserrat", sans-serif;
   font-size: 1.5em;
   text-align: center;
+  padding-top: 20px;
 }
 
 /*Projects card*/
@@ -577,9 +578,8 @@ footer {
 //Container for progress line on splash screen
 #line-container {
   position: absolute;
-  left: 26%;
-  top: 70%;
-  width: 130em;
+  top: 60%;
+  width: 100%;
 }
 
 //Circle Dots
@@ -771,4 +771,9 @@ footer {
   font-size: 18px;
   text-align: justify;
   padding: 0px 280px 0px 280px;
+}
+
+#loading-line {
+  margin: 0 auto;
+  width: 600px;
 }
