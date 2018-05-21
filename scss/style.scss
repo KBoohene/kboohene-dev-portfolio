@@ -796,14 +796,6 @@ footer {
   #footer-soc-links {
     font-size: 12px;
   }
-  #email {
-    border-bottom: 3px solid #487eb0;
-    padding-bottom: 1.5px;
-    &:hover {
-      padding-bottom: 6px;
-      border-bottom: 4px solid #fff;
-    }
-  }
 }
 
 //Extra small screens
@@ -832,6 +824,12 @@ footer {
   }
   #footer-soc-links {
     font-size: 12px;
+  }
+  .fd-content,
+  .fr-content,
+  .bd-content,
+  .ot-content {
+    width: 300px;
   }
 }
 
@@ -872,6 +870,23 @@ footer {
   }
   .hamburger-menu {
     height: 5.8em;
+  }
+  #email {
+    border-bottom: 3px solid #487eb0;
+    padding-bottom: 1.5px;
+    &:hover {
+      padding-bottom: 6px;
+      border-bottom: 4px solid #fff;
+    }
+  }
+}
+
+@media(max-width:400px) and (min-width:360px) {
+  .fd-content,
+  .fr-content,
+  .bd-content,
+  .ot-content {
+    width: 350px;
   }
 }
 
