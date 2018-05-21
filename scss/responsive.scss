@@ -1,34 +1,41 @@
-//Small Screens
-@media (max-width: 40em) {
-  #line-container {
-    visibility: hidden;
-  }
+//Extra small screens
+@media(max-width: 350px) {
   .profile-text {
     text-align: justify;
-    padding: 30px 0px 0px 0px;
-    font-family: "Reem Kufi", sans-serif;
+    padding: 20px 0px 0px 0px;
     margin: 0 auto;
     width: 280px;
   }
-  .copyright {
-    font-size: 12.5px;
-  }
   #ft-logo {
     height: 6em;
-    max-width: 35%;
+    max-width: 50%;
   }
-  #footer-soc-links {
-    font-size: 12px;
+  #line-container {
+    visibility: hidden;
   }
-  #email {
-    border-bottom: 3px solid #487eb0;
-    padding-bottom: 1.5px;
-    &:hover {
-      padding-bottom: 6px;
-      border-bottom: 4px solid #fff;
-    }
-  }
-  .footer-navigation {
-    font-size: 14px;
+  .project-text {
+    padding-right: 20px;
+    padding-left: 10px;
   }
 }
+
+@media (max-width: 40em) {
+  #sect-1,
+  #sect-2,
+  #sect-3,
+  #sect-4 {
+    border-right: 0px;
+  }
+  .circle-container {
+    visibility: hidden;
+  }
+  .project-card {
+    margin-bottom: 30px;
+  }
+  .project-text {
+    text-align: center;
+  }
+}
+
+//Medium Screen Sizes
+@media (max-width: 64em) and (min-width: 40.063em) {}
