@@ -874,11 +874,14 @@ footer {
     text-align: center;
   }
   .book-links {
-    margin-left: 8em;
+    margin-left: 6em;
   }
   #book-title,
   #author-name {
-    font-size: 18px;
+    font-size: 16px;
+  }
+  #author-name {
+    display: none;
   }
   .book-sections {
     margin-left: 20px;
