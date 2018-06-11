@@ -906,6 +906,13 @@ footer {
     margin: 0 auto;
     width: 280px;
   }
+  #author-name {
+    display: none;
+  }
+  #book-title {
+    font-size: 15px;
+    font-weight: bold;
+  }
   #ft-logo {
     height: 6em;
     max-width: 50%;
@@ -932,7 +939,8 @@ footer {
     width: 300px;
   }
   .book-links {
-    margin-left: 2em;
+    margin-left: 2.5em;
+    font-size: 13px;
   }
   .star-rating {
     margin-right: 0px;
